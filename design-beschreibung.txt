@@ -1,0 +1,20 @@
+App-Design: Anthrazit und Orange
+
+Finales Konzept: drei Screens einer Planungs-App mit transparenten Glasflächen.
+Datei: app-design-manrope.png
+
+Farben
+- Hintergrund: #181A1E
+- Orange: #FF7A1A
+- Haupttext: #F5F5F7
+- Sekundärtext: #A7ABB3
+
+Typografie: Manrope
+- Überschriften und Buttons: Semibold 600
+- Fließtexte: Regular 400
+- Beschriftungen und Zahlen: Medium 500
+- Schriftquelle: https://fonts.google.com/specimen/Manrope
+
+Transparente Karten, Navigation, Datumsfelder und Bedienelemente mit feinen Glaskanten. Orange Lichtformen hinter den Glasflächen. Großzügige Abstände und weich gerundete Formen, inspiriert von Apple Liquid Glass.
+
+Das PNG ist ein mit dem integrierten Imagegen-Werkzeug erstelltes Raster-Mockup. Die Schrift ist visuell an Manrope angenähert; bei einer Umsetzung muss die echte Schriftdatei eingebunden werden.
