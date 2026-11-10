@@ -1,17 +1,20 @@
-# App-Design: Anthrazit × Orange
+# App-Design: Anthrazit × Orange × Schwarz
 
-Modernes App-Konzept mit transparenten Glasflächen und Manrope als festgelegter Schriftart.
+Schwarz gibt den drei Screens Tiefe, anthrazitfarbene Glasflächen tragen den Inhalt, und Orange zeigt, was aktiv ist. Manrope bleibt die festgelegte Schriftart.
 
 ![App-Design mit drei Screens](app-design-manrope.png)
 
 ## Gestaltung
 
-- Dunkles Anthrazit: `#181A1E`
-- Orange Akzentfarbe: `#FF7A1A`
-- Haupttext: `#F5F5F7`
-- Sekundärtext: `#A7ABB3`
-- Transparente Karten, Buttons, Datumsfelder und schwebende Navigation
-- Weich gerundete Formen und feine Glaskanten, inspiriert von Apple Liquid Glass
+| Designfarbe | Rolle | Beispiel in der Vorlage |
+|---|---|---|
+| Schwarz `#000000` | Tiefste, ruhige Ebene | Hintergrund hinter den Karten, Zwischenräume und Mitte des Fokustimers |
+| Anthrazit `#181A1E` | Oberfläche über Schwarz | Fokuskarte, Aufgabenliste, inaktive Datumsfelder und schwebende Navigation |
+| Orange `#FF7A1A` | Aktion und aktiver Zustand | Start-Button, gewählter Tag und Fortschrittsring |
+
+Die abgerundeten Glasflächen behalten ihre feinen Lichtkanten. Sanfte orange Lichtwellen dürfen im Hintergrund durchscheinen. Schwarz ersetzt nicht die Kartenfarbe: Die Trennung von Grund und Oberfläche soll auf allen drei Screens erkennbar bleiben.
+
+**Lesbarkeit:** Haupttext `#F5F5F7` und Sekundärtext `#A7ABB3` stehen auf dunklen Flächen. Auf vollflächigem Orange sind Beschriftungen schwarz (Kontrast 8,05:1). Schwarz und Anthrazit allein unterscheiden sich nur schwach (1,21:1); wichtige Bediengrenzen deshalb mit Kontur oder Form kennzeichnen. Bei transparenten Karten zählt der tatsächlich sichtbare Hintergrund.
 
 ## Typografie
 

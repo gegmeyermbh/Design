@@ -1,11 +1,12 @@
-App-Design: Anthrazit und Orange
+App-Design: Anthrazit × Orange × Schwarz
 
 Finales Konzept: drei Screens einer Planungs-App mit transparenten Glasflächen.
 Datei: app-design-manrope.png
 
 Farben
-- Hintergrund: #181A1E
-- Orange: #FF7A1A
+- Schwarz: #000000 – tiefste Hintergrundebene und ruhige Zwischenräume; schwarze Schrift auf Orange.
+- Anthrazit: #181A1E – erhöhte Glasflächen: Karten, inaktive Datumsfelder und Navigationsleiste.
+- Orange: #FF7A1A – primäre Aktionen, Auswahl, Fokus-Ring und dezente Lichtreflexe.
 - Haupttext: #F5F5F7
 - Sekundärtext: #A7ABB3
 
@@ -15,6 +16,11 @@ Typografie: Manrope
 - Beschriftungen und Zahlen: Medium 500
 - Schriftquelle: https://fonts.google.com/specimen/Manrope
 
-Transparente Karten, Navigation, Datumsfelder und Bedienelemente mit feinen Glaskanten. Orange Lichtformen hinter den Glasflächen. Großzügige Abstände und weich gerundete Formen, inspiriert von Apple Liquid Glass.
+Anwendung auf die drei Screens
+- Startansicht: Die Fokuskarte und die nächsten Termine liegen als anthrazitfarbene Glasflächen auf schwarzem Grund. „Fokus starten“ bleibt orange.
+- Dein Plan: Schwarze Zwischenräume gliedern die anthrazitfarbenen Aufgabenzeilen. Nur der gewählte Tag und die Hauptaktion sind orange hervorgehoben.
+- Fokus: Die schwarze Mitte hält „25:00“ frei von Ablenkung. Der orange Fortschrittsring hebt sich vom anthrazitfarbenen Rest des Rings ab.
+
+Feine Glaskanten, weich gerundete Formen, großzügige Abstände und sanfte orange Lichtformen bleiben erhalten. Für wichtige Bediengrenzen reicht der Farbunterschied zwischen Schwarz und Anthrazit allein nicht aus. Helle Schrift auf dunklen Flächen, schwarze Schrift auf orangefarbenen Aktionsflächen.
 
 Das PNG ist ein mit dem integrierten Imagegen-Werkzeug erstelltes Raster-Mockup. Die Schrift ist visuell an Manrope angenähert; bei einer Umsetzung muss die echte Schriftdatei eingebunden werden.
