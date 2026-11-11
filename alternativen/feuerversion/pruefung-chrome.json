@@ -1,73 +1,101 @@
 {
   "Name": "Anthrazit Orange - Feuerstrom",
-  "Version": "1.4.0",
-  "BasePaletteVersion": "1.2.0",
-  "OriginalThemeObjectUnchanged": true,
+  "Version": "1.4.1",
+  "OriginalChromeColorsUnchanged": true,
   "OriginalIconByteIdentical": true,
-  "Design": "Organic unequal fire flow with quiet sections and asymmetric flame clusters; periodic orange and grey sine waves replaced",
-  "MaterialSource": "chrome-140-ntp-original.png",
-  "MaterialSourceSha256": "b7c390bef931e7664f55aae825a25359dacc371125b34497152b4e12932666df",
-  "MaterialTraversal": "Entire unique lower source stream once, nonlinear x mapping; no duplicated/tiled samples",
-  "MainFirePathKnots": [
+  "Master": {
+    "File": "Chrome-Feuerstrom-1.4.1-Gesamtmotiv.png",
+    "Width": 2560,
+    "Height": 1440,
+    "Sha256": "d715da84b5b1813ea6100611368721f280ffb73b03735bdca01704670d79700e",
+    "ComposedOnceBeforeAnyCrop": true
+  },
+  "HeaderCrop": {
+    "X": 0,
+    "Y": 0,
+    "Width": 2560,
+    "Height": 256,
+    "AllPixelsIdenticalToMaster": true
+  },
+  "NtpCrop": {
+    "X": 0,
+    "Y": 136,
+    "Width": 2560,
+    "Height": 1304,
+    "AllPixelsIdenticalToMaster": true
+  },
+  "AllThreeActiveHeaderKeysSameFile": true,
+  "InactiveFrameAlsoUsesSameFile": true,
+  "Target": {
+    "Monitor": "QHD2560x1440",
+    "ScalePercent": 100,
+    "Density": "standard",
+    "BookmarksBarVisible": true,
+    "HeaderHeightDIP": 120,
+    "ThemeOriginAboveBrowserViewDIP": 16,
+    "NtpSourceY": 136,
+    "Alignment": "left top",
+    "AssumesNoExtraThemeYOffset": true,
+    "FixedPixelTargetNotUniversalFluidLayout": true
+  },
+  "VisibleFirePixelBands": [
+    "0..40",
+    "41..80",
+    "81..125",
+    "126..159"
+  ],
+  "WarmPixelsAllWidth": [
+    1691,
+    7798,
+    9466,
+    6872
+  ],
+  "WarmPixelsFirst700Columns": [
+    483,
+    3837,
+    1818,
+    37
+  ],
+  "GlobalFirePathKnots": [
     [
       0,
       35
     ],
     [
-      260,
-      25
+      250,
+      70
     ],
     [
-      740,
-      30
+      620,
+      125
     ],
     [
-      1430,
-      7
+      1000,
+      28
     ],
     [
-      2130,
-      25
+      1450,
+      94
     ],
     [
-      2700,
-      33
+      1880,
+      150
     ],
     [
-      3100,
-      18
-    ],
-    [
-      3839,
-      29
-    ]
-  ],
-  "SoftGlassSweepKnots": [
-    [
-      0,
-      71
-    ],
-    [
-      1250,
+      2220,
       58
     ],
     [
-      2700,
-      95
-    ],
-    [
-      3839,
-      40
+      2559,
+      116
     ]
   ],
-  "MainFireCenterRange": "7..35 native pixels",
-  "NewTabAdaptedToMatch": true,
   "Images": [
     {
-      "Path": "images/frame.png",
-      "Width": 3840,
+      "Path": "images/header.png",
+      "Width": 2560,
       "Height": 256,
-      "Sha256": "8b0dc8d401a902e59aedbf2e02ad13134e2902ba45351f5545406035abc32bb0"
+      "Sha256": "9f4e23449bf099707c39dfb5fdae0217aef05745b947daaed77f4b28c655ebef"
     },
     {
       "Path": "images/icon128.png",
@@ -77,44 +105,33 @@
     },
     {
       "Path": "images/new-tab.png",
-      "Width": 3840,
-      "Height": 2160,
-      "Sha256": "a9691edcffa512d1aa3ac6a9414d516c2986ecb37068f51cdfb5c57da987e080"
-    },
-    {
-      "Path": "images/tabs.png",
-      "Width": 3840,
-      "Height": 41,
-      "Sha256": "ec3586db1536b8c6947d1621593525704cca0a7df7536159ed34681158fd5b2b"
-    },
-    {
-      "Path": "images/toolbar.png",
-      "Width": 3840,
-      "Height": 160,
-      "Sha256": "ca654a2bd976f740225d027b1783080216f7c1a68dec4870a962e4eaa2e9bf19"
+      "Width": 2560,
+      "Height": 1304,
+      "Sha256": "95729c67fb4298b04a78dbe48c431b6093de6aeab40648298349663a20246a8d"
     }
   ],
   "ChromeProfileChanged": false,
   "ActualChromeRenderingTested": false,
-  "ReadyForRootVisualQA": false,
-  "IsolatedChromeLoadSucceeded": true,
-  "SourceContactSheetReviewPassed": true,
-  "ChromeVisualInspectionLimitation": "Native Chrome UI inspection was blocked by the current-turn computer-use policy guard; no final1.4.0 native UI screenshot was obtained. Successful official CDP isolated-profile load and source-contact-sheet review do not constitute native-render visual validation.",
+  "ReadyForRootMasterReview": false,
+  "OriginalPaletteUnchanged": true,
+  "MasterPreviewReviewPassed": true,
+  "ChromeVisualInspectionLimitation": "Final native Chrome UI inspection was not attempted because computer-use access remained blocked by the URL guard. Master/header review, full pixel crop proofs and package parsing do not constitute native UI rendering validation.",
   "ChromePackageValidation": {
     "Passed": true,
     "ChromeVersion": "157.0.8103.40",
     "Method": "--pack-extension",
-    "IsolatedWorkProfile": true,
+    "IsolatedWorkDirectory": true,
     "ExitCode": 0,
-    "PrivateKeyAndCRXNotPublished": true
+    "NoBrowserUIInspection": true,
+    "PrivateKeyAndCRXExcluded": true
   },
   "ZipValidation": {
-    "EntryCount": 7,
+    "EntryCount": 5,
     "Entries": [
       {
-        "Path": "images/frame.png",
-        "Bytes": 142869,
-        "Sha256": "8b0dc8d401a902e59aedbf2e02ad13134e2902ba45351f5545406035abc32bb0",
+        "Path": "images/header.png",
+        "Bytes": 780578,
+        "Sha256": "9f4e23449bf099707c39dfb5fdae0217aef05745b947daaed77f4b28c655ebef",
         "MatchesSource": true
       },
       {
@@ -125,38 +142,27 @@
       },
       {
         "Path": "images/new-tab.png",
-        "Bytes": 6539623,
-        "Sha256": "a9691edcffa512d1aa3ac6a9414d516c2986ecb37068f51cdfb5c57da987e080",
-        "MatchesSource": true
-      },
-      {
-        "Path": "images/tabs.png",
-        "Bytes": 126062,
-        "Sha256": "ec3586db1536b8c6947d1621593525704cca0a7df7536159ed34681158fd5b2b",
-        "MatchesSource": true
-      },
-      {
-        "Path": "images/toolbar.png",
-        "Bytes": 141387,
-        "Sha256": "ca654a2bd976f740225d027b1783080216f7c1a68dec4870a962e4eaa2e9bf19",
+        "Bytes": 3731310,
+        "Sha256": "95729c67fb4298b04a78dbe48c431b6093de6aeab40648298349663a20246a8d",
         "MatchesSource": true
       },
       {
         "Path": "INSTALLATION.txt",
-        "Bytes": 2491,
-        "Sha256": "00296b1fedf77a6ac79c2fc7b4a35ac15d0203c5e0ae6f69aae9cbb120c73c06",
+        "Bytes": 2694,
+        "Sha256": "e28e178d5293b464349c2faf58d10063f1eeabd9b56cc5b61cecf923898f3b95",
         "MatchesSource": true
       },
       {
         "Path": "manifest.json",
-        "Bytes": 1640,
-        "Sha256": "86e5a00418fa1642499a7c27231dcbad9becf6e6b8582c0ed77c073e2f62772c",
+        "Bytes": 1696,
+        "Sha256": "aa59c89572fb324c0817ce7cb80314a328bc629867e2f9fb9ac1e23f42df3e09",
         "MatchesSource": true
       }
     ],
     "AllEntryBytesMatchSource": true,
     "ManifestAtRoot": true,
+    "MasterArtifactSeparate": true,
     "NoCacheOrPrivateKeyInPackage": true,
-    "ZipSha256": "2de844ba0cf428f053ea69219b5a1ae188c6cda8b03bd79dad2363dabe5fe187"
+    "ZipSha256": "59ad7f8a0a8f4a52d8532a15c4b56fcf35b4fa641427beb22e869892ad79fe12"
   }
 }

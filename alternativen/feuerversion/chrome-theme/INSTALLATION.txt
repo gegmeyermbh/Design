@@ -1,50 +1,53 @@
 ANTHRAZIT ORANGE - FEUERSTROM
-Chrome-Theme 1.4.0
+Chrome-Theme 1.4.1
 
-GESTALTUNG
-Unregelmäßige Feuerfilamente, ruhige Abschnitte und unterschiedlich
-kräftige Flammenfelder ziehen durch den Browserrahmen. Die Feuerlinie
-ändert Höhe, Verzweigung und Stärke. Anthrazitfarbene Flächen und ein
-weicher asymmetrischer Glanzverlauf bilden den Hintergrund.
+EIN GEMEINSAMES MOTIV
+Rahmen, Tabs und Werkzeugleisten verwenden dieselbe Datei header.png.
+Dieses Bild ist der unveränderte obere Ausschnitt eines gemeinsamen
+Gesamtmotivs mit 2560 × 1440 Pixeln. Auch der Neuer-Tab-Hintergrund stammt
+aus diesem Gesamtmotiv. Es gibt keine unabhängig gestalteten Leisten.
 
-Die Neuer-Tab-Seite verwendet das dazu passende Feuer-und-Rauch-Motiv
-mit ruhiger dunkler Mitte und zwei unterschiedlich angeordneten Randzonen.
-Der Hintergrund ist 3840 × 2160 Pixel groß und zentriert.
-Grundfarben, Chrome-Farbwerte, Bildpositionseinstellungen und Paketsymbol
-stammen weiterhin aus dem ursprünglichen Kupferlicht-Theme.
+Der Feuerstrom durchquert die oberen Bildbereiche über unterschiedliche
+Höhen, sodass das Motiv auch hinter Adress- und Lesezeichenleiste fortläuft.
+Der inaktive Fensterrahmen verwendet ebenfalls dieselbe Headerdatei.
+Die ursprünglichen Chrome-Farbwerte und das Paketsymbol bleiben erhalten.
+
+ZIELAUFSTELLUNG
+Abgestimmt auf QHD 2560 × 1440, 100 % Skalierung, Standarddichte und
+sichtbare Lesezeichenleiste mit einer angenommenen Kopfleiste von
+120 DIP. Chrome verwendet einen gemeinsamen Bildursprung 16 DIP
+oberhalb der BrowserView. Daher beginnt das Neuer-Tab-Bild im
+Gesamtmotiv bei Zeile 136 (120 + 16) und ist links oben ausgerichtet.
+Es handelt sich um feste Bildausschnitte. Andere Fenstergrößen,
+Skalierungen, Dichten oder Leistenanordnungen können die Verbindung
+zwischen Kopfbereich und Seiteninhalt anders darstellen.
 
 INSTALLATION
 1. ZIP vollständig in einen dauerhaften Ordner entpacken.
 2. In Chrome chrome://extensions öffnen.
 3. Entwicklermodus einschalten und „Entpackte Erweiterung laden“ wählen.
 4. Den Ordner auswählen, in dem manifest.json liegt.
-5. Das Ergebnis in einem Chrome-Fenster und einem neuen Tab prüfen.
+5. Das Ergebnis mit sichtbarer Lesezeichenleiste prüfen.
 Den Theme-Ordner während der Verwendung behalten.
 
-Ein bereits geladenes lokales Theme kann über seinen Eintrag unter
-chrome://extensions neu geladen werden. Zum Wechsel auf Feuerstrom
-den neuen Ordner laden. Zurücksetzen ist in den Chrome-Einstellungen
-unter Darstellung möglich. Das Paket ändert selbst kein Chrome-Profil.
+Ein bereits geladenes lokales Theme kann unter chrome://extensions neu
+geladen werden. Zum Wechsel auf diese Version den neuen Ordner laden.
+Zurücksetzen ist in den Chrome-Einstellungen unter Darstellung möglich.
+Das Paket ändert selbst kein Chrome-Profil.
 
 PRÜFUNG
-Manifest, lokale Bildverweise und Bildgrößen wurden geprüft.
-Das Paketsymbol ist über SHA-256 identisch zum Original.
-Die ursprünglichen Theme-Farben und Bildeinstellungen sind unverändert.
-Die Texturvorschau wurde geprüft. Das Theme ließ sich in Chrome 157
-über die offizielle Erweiterungsschnittstelle in einem isolierten
-Arbeitsprofil erfolgreich laden. Chromes eigene Paketprüfung mit
-Chrome 157.0.8103.40 war ebenfalls erfolgreich.
-Eine abschließende visuelle Prüfung der Chrome-Oberfläche war in diesem
-Durchlauf durch die blockierte Computersteuerung nicht möglich. Für
-Version 1.4.0 liegt deshalb keine geprüfte native Browseraufnahme vor.
-Das persönliche Chrome-Profil wurde dabei nicht verändert.
+Die vollständigen PNG-Ausschnitte wurden pixelweise mit dem Gesamtmotiv
+verglichen: Header (0, 0, 2560, 256), Neuer Tab (0, 136, 2560, 1304).
+Die drei aktiven UI-Bildschlüssel und der inaktive Rahmen verweisen auf
+exakt dieselbe Headerdatei. Original-Farbwerte und Symbol sind geprüft.
+Chromes eigene Paketprüfung mit Chrome 157.0.8103.40 war in einem
+isolierten Arbeitsordner erfolgreich.
+Die sichtbare Chrome-Oberfläche wurde in diesem Durchlauf nicht geprüft,
+weil der Zugriff durch die Computersteuerung blockiert war.
 
-TECHNIK
 Reines Theme ohne JavaScript, HTML, Berechtigungen oder Netzwerkzugriffe.
-Chrome bestimmt Schrift, Bedienelementformen und den Zuschnitt abhängig
-von Fensterlayout und Skalierung. Rauch, Glanz und Glaseindruck sind
-visuelle Materialeffekte.
+Chrome-Bedienelemente können Teile des gemeinsamen Bildes verdecken.
 
 Offizielle Dokumentation:
 https://developer.chrome.com/docs/extensions/develop/ui/themes
-https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked
+https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/frame/themed_background.cc

@@ -32,5 +32,5 @@ REFERENZEN
 app-design-feuerversion.png: alternatives App-Mockup.
 feuerlinie-glas-referenz.png: gemeinsames Ausgangsmotiv fuer Wallpaper/Chrome.
 wallpaper/: passend zugeschnittene QHD-Hintergruende.
-chrome-theme/: Feuerstrom 1.4.0, organische Feuerstroeme in UI und passendem Neuer-Tab-Hintergrund.
+chrome-theme/: Feuerstrom 1.4.1, eine gemeinsame Mastergrafik fuer Tabs, Adressleiste, Lesezeichenleiste und neuen Tab.
 downloads/: installierbare bzw. entpackbare ZIP-Pakete.

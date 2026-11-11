@@ -1,17 +1,18 @@
 {
   "manifest_version": 3,
   "name": "Anthrazit Orange - Feuerstrom",
-  "version": "1.4.0",
-  "description": "Organischer Feuerstrom mit unregelmäßigen Flammen, Rauch und anthrazitfarbenen Glasflächen.",
+  "version": "1.4.1",
+  "description": "Ein durchgehender organischer Feuerstrom für Tabs, Werkzeugleisten und Neuer-Tab-Hintergrund.",
   "icons": {
     "128": "images/icon128.png"
   },
   "theme": {
     "images": {
-      "theme_frame": "images/frame.png",
-      "theme_tab_background": "images/tabs.png",
-      "theme_toolbar": "images/toolbar.png",
-      "theme_ntp_background": "images/new-tab.png"
+      "theme_frame": "images/header.png",
+      "theme_tab_background": "images/header.png",
+      "theme_toolbar": "images/header.png",
+      "theme_ntp_background": "images/new-tab.png",
+      "theme_frame_inactive": "images/header.png"
     },
     "colors": {
       "frame": [
@@ -81,7 +82,7 @@
       ]
     },
     "properties": {
-      "ntp_background_alignment": "center",
+      "ntp_background_alignment": "left top",
       "ntp_background_repeat": "no-repeat",
       "ntp_logo_alternate": 1
     }

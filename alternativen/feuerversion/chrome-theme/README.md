@@ -1,41 +1,43 @@
-# Chrome-Theme: Feuerstrom
+# Chrome-Theme: Feuerstrom als Gesamtmotiv
 
-Version 1.4.0 verbindet organische Feuerströme im Browserrahmen mit einem passenden Neuer-Tab-Hintergrund. Die Flammen verzweigen sich, wechseln ungleichmäßig ihre Höhe und Stärke und gehen stellenweise in Rauch über. Lange ruhigere Abschnitte wechseln sich mit einzelnen stärkeren Flammenbüscheln ab.
+Version 1.4.1 verwendet ein einziges Gesamtmotiv für die Kopfzone und den neuen Tab. Tabs, Adressleiste und Lesezeichenleiste greifen auf dieselbe Hintergrunddatei zu. Der Neuer-Tab-Hintergrund ist ein passend versetzter Ausschnitt aus derselben Mastergrafik.
 
-Der Neuer-Tab-Hintergrund übernimmt die anthrazitfarbene Grundstimmung und die beiden asymmetrischen Randbereiche des ursprünglichen Kupferlicht-Themes. Dort stehen lebendige Feuerfilamente und Rauch; die Mitte bleibt ruhig für Suche und Verknüpfungen. Die UI-Texturen verwenden dasselbe Feuermaterial mit einer eigenen unregelmäßigen Linienführung. Die bisherigen wiederholten Sinuskurven entfallen.
+[ZIP herunterladen](../downloads/Anthrazit-Orange-Chrome-Feuerstrom-1.4.1.zip) · [Installation](INSTALLATION.txt) · [Manifest](manifest.json)
 
-Die Theme-Farben, Bildverweise, Ausrichtungseinstellungen und das Paketsymbol stammen weiterhin aus Kupferlicht 1.2.0.
+![Gemeinsames Gesamtmotiv](../chrome-gesamtmotiv.png)
 
-[ZIP herunterladen](../downloads/Anthrazit-Orange-Chrome-Feuerstrom-1.4.0.zip) · [Installation](INSTALLATION.txt) · [Manifest](manifest.json)
+Die Abbildung ist die reine Mastergrafik, keine Browseraufnahme. Chrome legt seine Tabs, Felder und Schaltflächen darüber.
 
-Zum vollständigen Wiederherstellen ist auch das [unveränderte Original Kupferlicht 1.2.0](../downloads/Anthrazit-Orange-Chrome-Kupferlicht-Original-1.2.0.zip) verfügbar.
+## Gemeinsame Bildquelle
 
-![Texturvorschau von Feuerstrom](../chrome-theme-vorschau.png)
+| Datei | Ausschnitt aus der Mastergrafik |
+|---|---|
+| Mastergrafik | 2560 × 1440 Pixel |
+| Gemeinsame Kopfzone, header.png | Zeilen 0–255, 2560 × 256 Pixel |
+| Neuer Tab, new-tab.png | Ab Zeile 136, 2560 × 1304 Pixel |
 
-[Bildauftrag für den passenden Hintergrund](../BILDAUFTRAG-CHROME140.txt)
+Die vier Bildverweise für Fensterrahmen, inaktiven Fensterrahmen, Tab-Hintergrund und Symbolleiste zeigen auf dieselbe header.png. Es gibt keine getrennten Grundflächen oder unterschiedlich beginnenden Kurven für diese Bereiche.
+
+Das Feuermotiv durchzieht auch die Quellzeilen für Adress- und Lesezeichenleiste. Die vorherige Beschränkung der Zeichnung auf die obersten Bildzeilen entfällt.
+
+## Zielansicht
+
+Die Registrierung ist für die QHD-Ansicht mit 2560 × 1440 Pixeln, Standarddarstellung bei 100 Prozent und sichtbarer Lesezeichenleiste ausgelegt. Für die Kopfzone werden 120 DIP angesetzt. Mit dem gemeinsamen Chrome-Bildursprung von 16 DIP darüber beginnt der Ausschnitt für den neuen Tab bei Masterzeile 136. Die Ausrichtung des neuen Tabs ist deshalb links oben.
+
+Bei anderer UI-Dichte oder ausgeblendeter Lesezeichenleiste muss der Körperausschnitt angepasst werden. Das Motiv wird innerhalb der PNGs nicht dynamisch an wechselnde Leistenhöhen angepasst.
 
 ## Installation
 
-Das ZIP vollständig in einen dauerhaften Ordner entpacken. In Chrome unter chrome://extensions den Entwicklermodus einschalten, „Entpackte Erweiterung laden“ wählen und den Ordner mit manifest.json auswählen. Den Ordner während der Nutzung behalten. Details und Hinweise zum Aktualisieren bzw. Zurücksetzen stehen in INSTALLATION.txt.
+ZIP vollständig in einen dauerhaften Ordner entpacken. Unter chrome://extensions den Entwicklermodus einschalten, „Entpackte Erweiterung laden“ wählen und den Ordner mit manifest.json auswählen. Diesen Ordner während der Nutzung behalten.
 
-Das Paket ist ein lokales Theme. Es enthält ausschließlich das Manifest und PNG-Bilder sowie die Installationshinweise; keine Skripte, Berechtigungen oder Netzwerkzugriffe.
+Für eine vollständige Rückkehr steht das [unveränderte Kupferlicht-Original 1.2.0](../downloads/Anthrazit-Orange-Chrome-Kupferlicht-Original-1.2.0.zip) bereit.
 
 ## Prüfung
 
-- Chromes eigene Paketprüfung über --pack-extension war mit Chrome 157.0.8103.40 erfolgreich.
-- Manifest, sämtliche lokalen Bildverweise, PNG-Abmessungen und ZIP-Inhalt wurden geprüft.
-- Symbol sowie alle Theme-Farben und Eigenschaften stimmen mit Kupferlicht 1.2.0 überein.
-- Chrome 157 hat das Theme über die offizielle Erweiterungsschnittstelle in einem separaten Testprofil erfolgreich geladen. Die abschließende Kontrolle der Browserdarstellung konnte nicht durchgeführt werden, weil die Computersteuerung die aktuelle Browser-URL nicht zuverlässig bestimmen konnte.
-- Die Vorschau zeigt die tatsächlichen Theme-Bilddateien als Kontaktbogen. Sie ist keine Browseraufnahme. Das persönliche Chrome-Profil wurde nicht verändert.
+Die drei aktiven UI-Bildverweise und der inaktive Rahmen wurden auf dieselbe Datei geprüft. Kopfzone und Neuer-Tab-Ausschnitt werden pixelgenau mit der Mastergrafik verglichen. Manifest, Bildgrößen, ZIP-Inhalt sowie die ursprünglichen Farbwerte und das Originalsymbol werden geprüft; dazu kommt Chromes native Paketprüfung.
 
-| Datei | Pixel |
-|---|---|
-| Rahmen | 3840 × 256 |
-| Inaktive Tabs | 3840 × 41 |
-| Symbolleiste | 3840 × 160 |
-| Neuer Tab, Feuerstrom | 3840 × 2160 |
-| Theme-Symbol, Original | 128 × 128 |
+Eine abschließende visuelle Kontrolle in Chrome ist durch die URL-Erkennung der Computersteuerung blockiert. Die Registrierung basiert auf dem gemeinsamen Bildzeichner von Chrome 157 und den genannten Zielmaßen. Das persönliche Chrome-Profil wurde nicht verändert.
 
-Glanz und Transparenz sind visuelle Materialeffekte in deckenden Bildern. Die Browserfenster werden dadurch nicht tatsächlich zum Desktop durchsichtig. Chrome bestimmt Schrift, Form der Bedienelemente und den sichtbaren Ausschnitt der Texturen. Eigene Hintergrundbilder für neue Tabs können den Theme-Hintergrund verdecken.
+[Prüfbericht](../pruefung-chrome.json) · [Bildauftrag für das Feuermaterial](../BILDAUFTRAG-CHROME140.txt)
 
-Dokumentation: [Chrome-Themes](https://developer.chrome.com/docs/extensions/develop/ui/themes), [lokales Laden](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked).
+Quellen: [Gemeinsamer Chrome-Bildzeichner](https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/frame/themed_background.cc#L75), [Tab-Hintergrund](https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/tabs/common/horizontal_tab_style_views.cc#L798), [Chrome-Themes](https://developer.chrome.com/docs/extensions/develop/ui/themes).

@@ -33,4 +33,4 @@ Invariants: three full devices, original 3:2 landscape sheet, same German conten
 Avoid: new controls, new labels, duplicated icons, extra screens, clipping, smoke, sparks across text, bright haze, blue/violet colors, heavy flames, fake text, watermark, new logos or any added objects.
 
 3. Technischer Export
-Wallpaper: gemeinsames Motiv auf4000x2560 skaliert, links crop(0,0,1440,2560) plus35px nach unten, rechts crop(1440,349,2560,1440). Chrome Feuerstrom 1.4.0: Originale Theme-Farben, Eigenschaften und Symbol von Kupferlicht; eigener organischer Feuerverlauf im Rahmen und dazu passend bearbeiteter Neuer-Tab-Hintergrund. Keine periodischen Sinuswellen. Bildauftrag: BILDAUFTRAG-CHROME140.txt.
+Wallpaper: gemeinsames Motiv auf4000x2560 skaliert, links crop(0,0,1440,2560) plus35px nach unten, rechts crop(1440,349,2560,1440). Chrome Feuerstrom 1.4.1: Originale Theme-Farben und Symbol von Kupferlicht; eine gemeinsame Mastergrafik mit registrierten Ausschnitten fuer Kopfzone und neuen Tab. Der neue Tab ist links oben ausgerichtet. Bildauftrag des Feuermaterials: BILDAUFTRAG-CHROME140.txt.
