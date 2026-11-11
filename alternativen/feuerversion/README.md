@@ -8,7 +8,7 @@ Die Feuerversion ergänzt die ursprüngliche Gestaltung als eigenständige Alter
 
 - [App-Design als PNG](app-design-feuerversion.png): drei vollständige Screens mit der bisherigen Anordnung und Manrope-artiger Typografie.
 - [Feuerlinie und Glas als Materialreferenz](feuerlinie-glas-referenz.png) sowie [Wallpaper mit aufsteigendem Rauch](feuerlinie-rauch-referenz.png).
-- [Chrome-Theme Feuerstrom 1.4.1 herunterladen](downloads/Anthrazit-Orange-Chrome-Feuerstrom-1.4.1.zip), mit [offenen Theme-Dateien und Installationshinweisen](chrome-theme/). Ein [gemeinsames Gesamtmotiv](chrome-gesamtmotiv.png) verbindet Tabs, Adressleiste, Lesezeichenleiste und neuen Tab. Die ursprünglichen Theme-Farben bleiben erhalten.
+- [Chrome-Theme Feuerstrom 1.4.2 herunterladen](downloads/Anthrazit-Orange-Chrome-Feuerstrom-1.4.2.zip), mit [offenen Theme-Dateien und Installationshinweisen](chrome-theme/). Das [gemeinsame Gesamtmotiv](chrome-gesamtmotiv.png) bleibt erhalten; der Neuer-Tab-Hintergrund gleicht die ausgemessene 125-Prozent-Darstellung gegenüber den Leisten aus. Die ursprünglichen Theme-Farben bleiben erhalten.
 - [Wallpaper-Paar mit Rauch für QHD herunterladen](downloads/Wallpaper-Feuerlinie-QHD.zip), auch als [einzelne PNGs](wallpaper/).
 - [Farben und Gestaltung](design-beschreibung.txt) sowie [Bildaufträge](BILDAUFTRAEGE.txt).
 
@@ -27,7 +27,7 @@ Flammen und Glanz bleiben hinter den Inhalten. Lesbarkeit, klare Bediengrenzen u
 
 Das App-Mockup wurde mit dem integrierten Imagegen-Werkzeug aus der ursprünglichen Referenz und dem neuen Wallpaper-Stil erstellt. Es ist eine visuelle Referenz, keine App-Implementierung. Für eine Umsetzung werden die echten Manrope-Schriftdateien eingebunden. Ein Chrome-Theme verändert Chrome-Farben und Hintergrundbilder; es setzt keine frei wählbare Schriftart für die Browseroberfläche.
 
-Beim Wallpaper steigt sichtbarer Rauch direkt aus den Flammen auf. Das Chrome-Theme verwendet ein einziges Gesamtmotiv. Alle Bereiche der Kopfzone greifen auf dieselbe Datei zu; der neue Tab erhält einen registrierten Ausschnitt aus derselben Mastergrafik. Die Zuordnung ist für die QHD-Ansicht mit sichtbarer Lesezeichenleiste ausgelegt. [Gesamtmotiv](chrome-gesamtmotiv.png), [Texturvorschau](chrome-theme-vorschau.png) und [Bildauftrag](BILDAUFTRAG-CHROME140.txt) dokumentieren die Umsetzung.
+Beim Wallpaper steigt sichtbarer Rauch direkt aus den Flammen auf. Das Chrome-Theme verwendet ein einziges Gesamtmotiv. Alle Bereiche der Kopfzone greifen auf dieselbe Datei zu; der neue Tab erhält eine skalierungskorrigierte Ausgabe derselben Mastergrafik. Diese ist auf die gemessene QHD-Ansicht mit sichtbarer Lesezeichenleiste und relativem NTP-Maßstab 1,25 abgestimmt. [Gesamtmotiv](chrome-gesamtmotiv.png), [Texturvorschau](chrome-theme-vorschau.png) und [Bildauftrag](BILDAUFTRAG-CHROME140.txt) dokumentieren die Umsetzung.
 
 ## Wallpaper-Aufstellung
 
@@ -42,4 +42,4 @@ Die beiden PNGs werden jeweils dem passenden Monitor zugewiesen. Diese Ausschnit
 
 ## Prüfung
 
-Die Bilddateien wurden dekodiert und visuell geprüft. Die Wallpaper haben die angegebenen Pixelmaße. Beim Chrome-Theme werden die gemeinsamen Bildverweise sowie die pixelgleichen Ausschnitte aus der Mastergrafik geprüft. Dazu kommen Manifest, Bildgrößen, ZIP-Inhalt, ursprüngliche Theme-Farben, Originalsymbol und Chromes native Paketprüfung. Die abschließende visuelle Kontrolle im Browser ist wegen der URL-Erkennung der Computersteuerung blockiert. Details stehen in der Theme-Dokumentation. Das App-Mockup und die Materialreferenz ersetzen keine Prüfung einer späteren App-Umsetzung.
+Die Bilddateien wurden dekodiert und visuell geprüft. Die Wallpaper haben die angegebenen Pixelmaße. Beim Chrome-Theme wurden Header und NTP numerisch mit der bereitgestellten Aufnahme registriert. Die Offline-Nachrechnung bestätigt dieselbe geometrische Abbildung nach der Korrektur. Dazu kommen Manifest, Bildgrößen, ZIP-Inhalt, ursprüngliche Theme-Farben, Originalsymbol und Chromes native Paketprüfung. Eine neue visuelle Kontrolle im Browser ist wegen der URL-Erkennung der Computersteuerung blockiert. Die private Aufnahme wurde nicht veröffentlicht. Details stehen in der Theme-Dokumentation.

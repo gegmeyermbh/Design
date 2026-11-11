@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Anthrazit Orange - Feuerstrom",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Ein durchgehender organischer Feuerstrom für Tabs, Werkzeugleisten und Neuer-Tab-Hintergrund.",
   "icons": {
     "128": "images/icon128.png"

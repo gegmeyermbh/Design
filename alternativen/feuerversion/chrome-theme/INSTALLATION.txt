@@ -1,26 +1,27 @@
 ANTHRAZIT ORANGE - FEUERSTROM
-Chrome-Theme 1.4.1
+Chrome-Theme 1.4.2
 
 EIN GEMEINSAMES MOTIV
-Rahmen, Tabs und Werkzeugleisten verwenden dieselbe Datei header.png.
-Dieses Bild ist der unveränderte obere Ausschnitt eines gemeinsamen
-Gesamtmotivs mit 2560 × 1440 Pixeln. Auch der Neuer-Tab-Hintergrund stammt
-aus diesem Gesamtmotiv. Es gibt keine unabhängig gestalteten Leisten.
+Rahmen, Tabs sowie Adress- und Lesezeichenleiste verwenden dieselbe Datei
+header.png. Sie ist bytegenau identisch mit Version 1.4.1 und stammt aus
+dem gemeinsamen Gesamtmotiv mit 2560 × 1440 Pixeln. Auch der inaktive
+Rahmen verwendet diese Datei. Das Gesamtmotiv, die ursprünglichen
+Chrome-Farbwerte und das Paketsymbol sind unverändert.
 
-Der Feuerstrom durchquert die oberen Bildbereiche über unterschiedliche
-Höhen, sodass das Motiv auch hinter Adress- und Lesezeichenleiste fortläuft.
-Der inaktive Fensterrahmen verwendet ebenfalls dieselbe Headerdatei.
-Die ursprünglichen Chrome-Farbwerte und das Paketsymbol bleiben erhalten.
+KORRIGIERTER NEUER-TAB-EXPORT
+Der bereitgestellte QHD-Screenshot zeigte eine Darstellung des Neuer-Tab-
+Bildes mit Faktor 1,25 gegenüber dem Kopfbereich mit Faktor 1,0. Version
+1.4.2 gleicht genau diesen gemessenen Unterschied im Bildexport aus.
+Sie ändert keine Zoom-, Windows- oder Profileinstellung. Die Ursache des
+Skalierungsunterschieds wurde nicht durch Auslesen des Profils bestätigt.
 
-ZIELAUFSTELLUNG
-Abgestimmt auf QHD 2560 × 1440, 100 % Skalierung, Standarddichte und
-sichtbare Lesezeichenleiste mit einer angenommenen Kopfleiste von
-120 DIP. Chrome verwendet einen gemeinsamen Bildursprung 16 DIP
-oberhalb der BrowserView. Daher beginnt das Neuer-Tab-Bild im
-Gesamtmotiv bei Zeile 136 (120 + 16) und ist links oben ausgerichtet.
-Es handelt sich um feste Bildausschnitte. Andere Fenstergrößen,
-Skalierungen, Dichten oder Leistenanordnungen können die Verbindung
-zwischen Kopfbereich und Seiteninhalt anders darstellen.
+Das neue NTP-Bild hat 2048 × 1042 Pixel. Jeder Bildpunkt (i,j) wird bilinear
+aus dem unveränderten Gesamtmotiv bei (1,25*i; 137,25+1,25*j) abgetastet.
+Die Ausrichtung bleibt links oben, ohne Wiederholung. Unter der gemessenen
+Darstellung setzen sich die Bildkoordinaten des Kopfbereichs im NTP fort.
+Diese Kalibrierung gilt für die bereitgestellte Ansicht mit sichtbarer
+Lesezeichenleiste. Andere Zoomstufen, Fenstergrößen oder Leistenanordnungen
+können eine andere Kalibrierung benötigen.
 
 INSTALLATION
 1. ZIP vollständig in einen dauerhaften Ordner entpacken.
@@ -33,21 +34,24 @@ Den Theme-Ordner während der Verwendung behalten.
 Ein bereits geladenes lokales Theme kann unter chrome://extensions neu
 geladen werden. Zum Wechsel auf diese Version den neuen Ordner laden.
 Zurücksetzen ist in den Chrome-Einstellungen unter Darstellung möglich.
-Das Paket ändert selbst kein Chrome-Profil.
 
 PRÜFUNG
-Die vollständigen PNG-Ausschnitte wurden pixelweise mit dem Gesamtmotiv
-verglichen: Header (0, 0, 2560, 256), Neuer Tab (0, 136, 2560, 1304).
-Die drei aktiven UI-Bildschlüssel und der inaktive Rahmen verweisen auf
-exakt dieselbe Headerdatei. Original-Farbwerte und Symbol sind geprüft.
+Alle NTP-Bildpunkte werden unabhängig gegen die Abtastformel geprüft.
+Die Registrierung wird zusätzlich offline mit der aus dem Screenshot
+gemessenen Abbildung simuliert. Dabei entstehen durch die Verkleinerung
+und anschließende Darstellung übliche Filterunterschiede in den Farben.
+Header- und Master-Dateien, die vier gemeinsamen Header-Verweise sowie
+Original-Farbwerte und Symbol werden auf unveränderte Werte geprüft.
 Chromes eigene Paketprüfung mit Chrome 157.0.8103.40 war in einem
-isolierten Arbeitsordner erfolgreich.
-Die sichtbare Chrome-Oberfläche wurde in diesem Durchlauf nicht geprüft,
-weil der Zugriff durch die Computersteuerung blockiert war.
+isolierten Arbeitsordner erfolgreich (Exit-Code 0).
+Die korrigierte Version wurde nicht erneut in einer sichtbaren Chrome-
+Oberfläche geprüft; die Computersteuerung blieb durch den URL-Schutz
+blockiert. Eine Offline-Simulation ist kein nativer Darstellungsnachweis.
 
 Reines Theme ohne JavaScript, HTML, Berechtigungen oder Netzwerkzugriffe.
 Chrome-Bedienelemente können Teile des gemeinsamen Bildes verdecken.
 
-Offizielle Dokumentation:
+Offizielle Quellen:
 https://developer.chrome.com/docs/extensions/develop/ui/themes
-https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/frame/themed_background.cc
+https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/webui/new_tab_page/new_tab_page_handler.cc
+https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/resources/new_tab_page/untrusted/background_image.html

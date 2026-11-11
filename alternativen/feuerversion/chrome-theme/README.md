@@ -1,43 +1,52 @@
 # Chrome-Theme: Feuerstrom als Gesamtmotiv
 
-Version 1.4.1 verwendet ein einziges Gesamtmotiv für die Kopfzone und den neuen Tab. Tabs, Adressleiste und Lesezeichenleiste greifen auf dieselbe Hintergrunddatei zu. Der Neuer-Tab-Hintergrund ist ein passend versetzter Ausschnitt aus derselben Mastergrafik.
+Version 1.4.2 verwendet weiterhin ein gemeinsames Gesamtmotiv für Tabs, Adressleiste, Lesezeichenleiste und neuen Tab. Kopfzone und Motiv sind unverändert. Die Hintergrunddatei des neuen Tabs gleicht jetzt die aus der bereitgestellten Aufnahme gemessene, abweichende Vergrößerung aus.
 
-[ZIP herunterladen](../downloads/Anthrazit-Orange-Chrome-Feuerstrom-1.4.1.zip) · [Installation](INSTALLATION.txt) · [Manifest](manifest.json)
+[ZIP herunterladen](../downloads/Anthrazit-Orange-Chrome-Feuerstrom-1.4.2.zip) · [Installation](INSTALLATION.txt) · [Manifest](manifest.json)
 
 ![Gemeinsames Gesamtmotiv](../chrome-gesamtmotiv.png)
 
-Die Abbildung ist die reine Mastergrafik, keine Browseraufnahme. Chrome legt seine Tabs, Felder und Schaltflächen darüber.
+Die Abbildung zeigt die Mastergrafik, keine Browseraufnahme. Chrome legt seine Bedienelemente darüber.
+
+![Vergleich des Bildübergangs – Simulation, keine Browseraufnahme](../chrome-uebergangsvergleich.png)
+
+Der Vergleich simuliert den ausgemessenen Bildmaßstab mit den Artwork-Dateien. Er enthält keine Inhalte der privaten Browseraufnahme.
 
 ## Gemeinsame Bildquelle
 
-| Datei | Ausschnitt aus der Mastergrafik |
+| Datei | Format und Zuordnung |
 |---|---|
-| Mastergrafik | 2560 × 1440 Pixel |
-| Gemeinsame Kopfzone, header.png | Zeilen 0–255, 2560 × 256 Pixel |
-| Neuer Tab, new-tab.png | Ab Zeile 136, 2560 × 1304 Pixel |
+| Mastergrafik | 2560 × 1440 Pixel, unverändert |
+| Gemeinsame Kopfzone, header.png | Oberste 256 Masterzeilen, 2560 × 256 Pixel, unverändert |
+| Neuer Tab, new-tab.png | 2048 × 1042 Pixel, skalierungskorrigierte Abtastung desselben Masters |
 
-Die vier Bildverweise für Fensterrahmen, inaktiven Fensterrahmen, Tab-Hintergrund und Symbolleiste zeigen auf dieselbe header.png. Es gibt keine getrennten Grundflächen oder unterschiedlich beginnenden Kurven für diese Bereiche.
+Fensterrahmen, inaktiver Rahmen, Tab-Hintergrund und Symbolleiste verwenden dieselbe header.png. Deren Registrierung wurde an den sichtbaren Bildpunkten der bereitgestellten Browseraufnahme bestätigt.
 
-Das Feuermotiv durchzieht auch die Quellzeilen für Adress- und Lesezeichenleiste. Die vorherige Beschränkung der Zeichnung auf die obersten Bildzeilen entfällt.
+## Gemessene Darstellung und Korrektur
 
-## Zielansicht
+Die Aufnahme zeigt unterschiedliche Maßstäbe:
 
-Die Registrierung ist für die QHD-Ansicht mit 2560 × 1440 Pixeln, Standarddarstellung bei 100 Prozent und sichtbarer Lesezeichenleiste ausgelegt. Für die Kopfzone werden 120 DIP angesetzt. Mit dem gemeinsamen Chrome-Bildursprung von 16 DIP darüber beginnt der Ausschnitt für den neuen Tab bei Masterzeile 136. Die Ausrichtung des neuen Tabs ist deshalb links oben.
+- Kopfzone: BildschirmX = MasterX; BildschirmY = MasterY − 16.
+- Neuer Tab vor der Korrektur: BildschirmX = 1,25 × MasterX; BildschirmY = 1,25 × MasterY − 48,75.
 
-Bei anderer UI-Dichte oder ausgeblendeter Lesezeichenleiste muss der Körperausschnitt angepasst werden. Das Motiv wird innerhalb der PNGs nicht dynamisch an wechselnde Leistenhöhen angepasst.
+Damit wurde das Bild im neuen Tab um 25 Prozent größer dargestellt als das Bild in den Leisten. Die Ursache muss nicht als Windows-DPI oder Seitenzoom angenommen werden; die Korrektur verwendet den gemessenen Bildmaßstab.
+
+Die neue Hintergrunddatei tastet jedes Ausgabepixel (x, y) bilinear im Master bei (1,25 × x, 137,25 + 1,25 × y) ab. Die erneute 125-Prozent-Darstellung ergibt dadurch geometrisch denselben Maßstab und Bildversatz wie die Kopfzone. Die Ausrichtung bleibt links oben.
+
+Die Anpassung gilt für die ausgemessene QHD-Ansicht mit sichtbarer Lesezeichenleiste und dem relativen NTP-Maßstab 1,25. Bei anderer Skalierung oder anderem Leistenlayout muss der Export neu kalibriert werden. Browser- und Zoom-Einstellungen werden nicht verändert.
 
 ## Installation
 
 ZIP vollständig in einen dauerhaften Ordner entpacken. Unter chrome://extensions den Entwicklermodus einschalten, „Entpackte Erweiterung laden“ wählen und den Ordner mit manifest.json auswählen. Diesen Ordner während der Nutzung behalten.
 
-Für eine vollständige Rückkehr steht das [unveränderte Kupferlicht-Original 1.2.0](../downloads/Anthrazit-Orange-Chrome-Kupferlicht-Original-1.2.0.zip) bereit.
+Für die Rückkehr steht das [unveränderte Kupferlicht-Original 1.2.0](../downloads/Anthrazit-Orange-Chrome-Kupferlicht-Original-1.2.0.zip) bereit.
 
 ## Prüfung
 
-Die drei aktiven UI-Bildverweise und der inaktive Rahmen wurden auf dieselbe Datei geprüft. Kopfzone und Neuer-Tab-Ausschnitt werden pixelgenau mit der Mastergrafik verglichen. Manifest, Bildgrößen, ZIP-Inhalt sowie die ursprünglichen Farbwerte und das Originalsymbol werden geprüft; dazu kommt Chromes native Paketprüfung.
+Die Bildzuordnung wurde anhand der Browseraufnahme numerisch bestimmt. Unabhängige Prüfungen bestätigen den unveränderten Header und die explizite Abtastung des neuen Hintergrunds. Eine Offline-Vorwärtsdarstellung mit dem gemessenen Maßstab ergibt keinen geometrischen Versatz mehr; an feinen Details bleibt normale Resampling-Unschärfe.
 
-Eine abschließende visuelle Kontrolle in Chrome ist durch die URL-Erkennung der Computersteuerung blockiert. Die Registrierung basiert auf dem gemeinsamen Bildzeichner von Chrome 157 und den genannten Zielmaßen. Das persönliche Chrome-Profil wurde nicht verändert.
+Die Prüfungen von Manifest, Bildgrößen, ZIP-Inhalt, ursprünglichen Farbwerten und Originalsymbol sowie Chromes native Paketprüfung sind bestanden. Eine neue visuelle Kontrolle in Chrome ist durch die URL-Erkennung der Computersteuerung blockiert. Die private Browseraufnahme wurde nur lokal ausgewertet und nicht veröffentlicht.
 
-[Prüfbericht](../pruefung-chrome.json) · [Bildauftrag für das Feuermaterial](../BILDAUFTRAG-CHROME140.txt)
+[Prüfbericht](../pruefung-chrome.json) · [Bildauftrag des Feuermaterials](../BILDAUFTRAG-CHROME140.txt)
 
-Quellen: [Gemeinsamer Chrome-Bildzeichner](https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/frame/themed_background.cc#L75), [Tab-Hintergrund](https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/tabs/common/horizontal_tab_style_views.cc#L798), [Chrome-Themes](https://developer.chrome.com/docs/extensions/develop/ui/themes).
+Quellen: [Gemeinsamer Chrome-Bildzeichner](https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/ui/views/frame/themed_background.cc#L75), [NTP-Hintergrund](https://github.com/chromium/chromium/blob/157.0.8103.40/chrome/browser/resources/new_tab_page/untrusted/background_image.html), [Chrome-Themes](https://developer.chrome.com/docs/extensions/develop/ui/themes).
