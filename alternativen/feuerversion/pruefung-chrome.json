@@ -1,127 +1,120 @@
 {
-  "Name": "Anthrazit Orange - Kupferlicht Feuerlinien",
-  "Version": "1.3.1",
-  "BaseVersion": "1.2.0",
-  "Scope": "Only thin original orange UI edges; new-tab background and icon byte-identical",
-  "Method": "Keep original antialiased line cores intact; sample approved AI fire texture as soft tiny emission above exact original sine and existing y24 hairline",
+  "Name": "Anthrazit Orange - Feuerstrom",
+  "Version": "1.4.0",
+  "BasePaletteVersion": "1.2.0",
   "OriginalThemeObjectUnchanged": true,
-  "OriginalIconPathUnchanged": true,
-  "UITexturePixelChecks": [
+  "OriginalIconByteIdentical": true,
+  "Design": "Organic unequal fire flow with quiet sections and asymmetric flame clusters; periodic orange and grey sine waves replaced",
+  "MaterialSource": "chrome-140-ntp-original.png",
+  "MaterialSourceSha256": "b7c390bef931e7664f55aae825a25359dacc371125b34497152b4e12932666df",
+  "MaterialTraversal": "Entire unique lower source stream once, nonlinear x mapping; no duplicated/tiled samples",
+  "MainFirePathKnots": [
+    [
+      0,
+      35
+    ],
+    [
+      260,
+      25
+    ],
+    [
+      740,
+      30
+    ],
+    [
+      1430,
+      7
+    ],
+    [
+      2130,
+      25
+    ],
+    [
+      2700,
+      33
+    ],
+    [
+      3100,
+      18
+    ],
+    [
+      3839,
+      29
+    ]
+  ],
+  "SoftGlassSweepKnots": [
+    [
+      0,
+      71
+    ],
+    [
+      1250,
+      58
+    ],
+    [
+      2700,
+      95
+    ],
+    [
+      3839,
+      40
+    ]
+  ],
+  "MainFireCenterRange": "7..35 native pixels",
+  "NewTabAdaptedToMatch": true,
+  "Images": [
     {
-      "File": "frame.png",
+      "Path": "images/frame.png",
       "Width": 3840,
       "Height": 256,
-      "SineMaskRadius": 7,
-      "HairlineY": null,
-      "HairlineMaskRadius": null,
-      "Pixels": {
-        "ChangedPixels": 3839,
-        "ChangedPercent": 0.3905232747395833,
-        "OutsideMaskChanged": 0,
-        "NeutralGlossChanged": 0,
-        "OriginalLineCoreChanged": 0,
-        "MaximumDistanceFromOriginalLine": 7,
-        "ChangedBounds": {
-          "MinX": 176,
-          "MinY": 15,
-          "MaxX": 3839,
-          "MaxY": 95
-        }
-      }
+      "Sha256": "8b0dc8d401a902e59aedbf2e02ad13134e2902ba45351f5545406035abc32bb0"
     },
     {
-      "File": "tabs.png",
+      "Path": "images/icon128.png",
+      "Width": 128,
+      "Height": 128,
+      "Sha256": "fde9a4c2fcf80d0eec98f641e577b89e0e78e43d4db02f8adfd51f2c3d7421f7"
+    },
+    {
+      "Path": "images/new-tab.png",
+      "Width": 3840,
+      "Height": 2160,
+      "Sha256": "a9691edcffa512d1aa3ac6a9414d516c2986ecb37068f51cdfb5c57da987e080"
+    },
+    {
+      "Path": "images/tabs.png",
       "Width": 3840,
       "Height": 41,
-      "SineMaskRadius": 7,
-      "HairlineY": 24,
-      "HairlineMaskRadius": 5,
-      "Pixels": {
-        "ChangedPixels": 4652,
-        "ChangedPercent": 2.9547764227642275,
-        "OutsideMaskChanged": 0,
-        "NeutralGlossChanged": 0,
-        "OriginalLineCoreChanged": 0,
-        "MaximumDistanceFromOriginalLine": 7,
-        "ChangedBounds": {
-          "MinX": 122,
-          "MinY": 15,
-          "MaxX": 3839,
-          "MaxY": 38
-        }
-      }
+      "Sha256": "ec3586db1536b8c6947d1621593525704cca0a7df7536159ed34681158fd5b2b"
     },
     {
-      "File": "toolbar.png",
+      "Path": "images/toolbar.png",
       "Width": 3840,
       "Height": 160,
-      "SineMaskRadius": 7,
-      "HairlineY": 24,
-      "HairlineMaskRadius": 5,
-      "Pixels": {
-        "ChangedPixels": 6256,
-        "ChangedPercent": 1.0182291666666667,
-        "OutsideMaskChanged": 0,
-        "NeutralGlossChanged": 0,
-        "OriginalLineCoreChanged": 0,
-        "MaximumDistanceFromOriginalLine": 7,
-        "ChangedBounds": {
-          "MinX": 122,
-          "MinY": 15,
-          "MaxX": 3839,
-          "MaxY": 95
-        }
-      }
-    }
-  ],
-  "ImageHashes": [
-    {
-      "File": "frame.png",
-      "OriginalSha256": "09656f314d3568d6a0e25620a67807a2be657ff19e5715f05ae38204520d4d6a",
-      "NewSha256": "2d477c660cb0b0064683c34f363567691bc23c5479ad7fc253aa7cbd3f6c083b",
-      "ByteIdentical": false
-    },
-    {
-      "File": "icon128.png",
-      "OriginalSha256": "fde9a4c2fcf80d0eec98f641e577b89e0e78e43d4db02f8adfd51f2c3d7421f7",
-      "NewSha256": "fde9a4c2fcf80d0eec98f641e577b89e0e78e43d4db02f8adfd51f2c3d7421f7",
-      "ByteIdentical": true
-    },
-    {
-      "File": "new-tab.png",
-      "OriginalSha256": "a4e4c06ff734918c99abbbca99e8f0afe08399f7c090b0a9fd8580ecf2c4d540",
-      "NewSha256": "a4e4c06ff734918c99abbbca99e8f0afe08399f7c090b0a9fd8580ecf2c4d540",
-      "ByteIdentical": true
-    },
-    {
-      "File": "tabs.png",
-      "OriginalSha256": "3b6380693d34643dba9255ce647e45f51024845f33174d716a36f332a2bac14d",
-      "NewSha256": "f8044bc4c683657e186bd31f2b7c9b1b7d05000c72172fc282777f88d4639b60",
-      "ByteIdentical": false
-    },
-    {
-      "File": "toolbar.png",
-      "OriginalSha256": "eeada0565f97f1335ced1cd7f342183db331106cd9670d2cbeabd60840516266",
-      "NewSha256": "edcdd9760300b70ac05eaef1fe2d60e3f8c5e6d26029d2a28f8d862a3c23288f",
-      "ByteIdentical": false
+      "Sha256": "ca654a2bd976f740225d027b1783080216f7c1a68dec4870a962e4eaa2e9bf19"
     }
   ],
   "ChromeProfileChanged": false,
   "ActualChromeRenderingTested": false,
+  "ReadyForRootVisualQA": false,
+  "IsolatedChromeLoadSucceeded": true,
+  "SourceContactSheetReviewPassed": true,
+  "ChromeVisualInspectionLimitation": "Native Chrome UI inspection was blocked by the current-turn computer-use policy guard; no final1.4.0 native UI screenshot was obtained. Successful official CDP isolated-profile load and source-contact-sheet review do not constitute native-render visual validation.",
   "ChromePackageValidation": {
     "Passed": true,
     "ChromeVersion": "157.0.8103.40",
     "Method": "--pack-extension",
     "IsolatedWorkProfile": true,
     "ExitCode": 0,
-    "CrxAndKeyExcludedFromDeliverable": true
+    "PrivateKeyAndCRXNotPublished": true
   },
   "ZipValidation": {
+    "EntryCount": 7,
     "Entries": [
       {
         "Path": "images/frame.png",
-        "Bytes": 129736,
-        "Sha256": "2d477c660cb0b0064683c34f363567691bc23c5479ad7fc253aa7cbd3f6c083b",
+        "Bytes": 142869,
+        "Sha256": "8b0dc8d401a902e59aedbf2e02ad13134e2902ba45351f5545406035abc32bb0",
         "MatchesSource": true
       },
       {
@@ -132,38 +125,38 @@
       },
       {
         "Path": "images/new-tab.png",
-        "Bytes": 1363955,
-        "Sha256": "a4e4c06ff734918c99abbbca99e8f0afe08399f7c090b0a9fd8580ecf2c4d540",
+        "Bytes": 6539623,
+        "Sha256": "a9691edcffa512d1aa3ac6a9414d516c2986ecb37068f51cdfb5c57da987e080",
         "MatchesSource": true
       },
       {
         "Path": "images/tabs.png",
-        "Bytes": 47555,
-        "Sha256": "f8044bc4c683657e186bd31f2b7c9b1b7d05000c72172fc282777f88d4639b60",
+        "Bytes": 126062,
+        "Sha256": "ec3586db1536b8c6947d1621593525704cca0a7df7536159ed34681158fd5b2b",
         "MatchesSource": true
       },
       {
         "Path": "images/toolbar.png",
-        "Bytes": 130809,
-        "Sha256": "edcdd9760300b70ac05eaef1fe2d60e3f8c5e6d26029d2a28f8d862a3c23288f",
+        "Bytes": 141387,
+        "Sha256": "ca654a2bd976f740225d027b1783080216f7c1a68dec4870a962e4eaa2e9bf19",
         "MatchesSource": true
       },
       {
         "Path": "INSTALLATION.txt",
-        "Bytes": 2152,
-        "Sha256": "1b65dc9cd309d89781d52bf8cb3f62cac44dae81f15bad8b4c3589e9ceeb63b7",
+        "Bytes": 2491,
+        "Sha256": "00296b1fedf77a6ac79c2fc7b4a35ac15d0203c5e0ae6f69aae9cbb120c73c06",
         "MatchesSource": true
       },
       {
         "Path": "manifest.json",
         "Bytes": 1640,
-        "Sha256": "1f0c7a5af119df85810a3e0edb8905f2e68727fdf59be25a86145232f29eae78",
+        "Sha256": "86e5a00418fa1642499a7c27231dcbad9becf6e6b8582c0ed77c073e2f62772c",
         "MatchesSource": true
       }
     ],
-    "EntryCount": 7,
     "AllEntryBytesMatchSource": true,
     "ManifestAtRoot": true,
-    "ZipSha256": "9f16d6226db5c87892546ab4fac549bf4feb1acb79e9d22659a0c2eebd2e1059"
+    "NoCacheOrPrivateKeyInPackage": true,
+    "ZipSha256": "2de844ba0cf428f053ea69219b5a1ae188c6cda8b03bd79dad2363dabe5fe187"
   }
 }

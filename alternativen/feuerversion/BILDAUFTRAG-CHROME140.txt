@@ -1,0 +1,17 @@
+Werkzeug: integriertes Imagegen.
+
+Use case: style-transfer / precise-object-edit
+Asset type: Chrome new-tab background matching an expressive organic fire-and-smoke browser theme.
+Input image 1: EDIT TARGET: the ORIGINAL Kupferlicht Chrome background with two asymmetric copper ribbon zones and a charcoal/anthracite background.
+Input image 2: MATERIAL AND LIGHT REFERENCE ONLY: approved orange fire, rising charcoal smoke and dark glossy surfaces. Do not copy its overall cross-screen wave layout.
+Primary request: Turn the original copper ribbons into living, irregular streams of fire with smoke. The current smooth metallic ribbons and mechanically repeated waves are too regular and dull. The new-tab image must visually match the fiery browser edges.
+Composition:
+- Keep the broad quiet charcoal/anthracite center and original widescreen 16:9 canvas.
+- Keep two unequal edge regions as the compositional anchors: a curling upper-right stream and a sweeping lower-left/lower-edge stream, approximately in the existing original copper zones.
+- Replace the broad smooth METALLIC COPPER BANDS themselves with slender braided, torn, luminous fire filaments. No flat solid orange metal bands remaining.
+- Make each stream organic and nonperiodic: unequal bends, irregular changes in thickness, little branches splitting and rejoining, long quiet glowing stretches followed by asymmetric clusters of taller flame tongues, small turbulent eddies and ragged tapering ends. Every part should differ; no sine waves, no evenly spaced repeated crests, no matching repeated flame motifs.
+- Fine translucent ash/charcoal smoke visibly rises from the hotter sections, lit copper-orange from below. Smoke curls should be unequal and naturally wind-swept, fading into the dark background.
+- Keep important bright details near the edge regions. The middle 50% width by 45% height must stay calm, dark and legible behind the Google logo, search box and shortcuts.
+Materials and color: original smoky anthracite/charcoal background, subtle deep black shading, orange #FF7A1A fire with amber hot points and copper-red fringes. A few delicate warm reflections on existing dark surfaces. No new big white/silver glass waves. A few tiny embers near fire only.
+Mood: elegant but alive, cinematic, detailed, dynamic, irregular, photorealistic flame flow. This is still the original dark Kupferlicht family, now organically burning.
+Constraints: image only, no text, no Google logo, no UI, no icons, no clock, no devices, no borders or watermark. Do not add a straight fire stripe across the center. No sinusoidal repeating ribbon or large perfect arcs. No perfectly smooth orange metal surfaces or little evenly spaced candle flames glued on top of them. No blue/violet and no large bright smoke cloud over the calm center. Full bleed, landscape 16:9.

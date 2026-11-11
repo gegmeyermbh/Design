@@ -1,40 +1,49 @@
-ANTHRAZIT ORANGE - KUPFERLICHT FEUERLINIEN
-Chrome-Theme 1.3.1 auf Grundlage von Kupferlicht 1.2.0
+ANTHRAZIT ORANGE - FEUERSTROM
+Chrome-Theme 1.4.0
 
-ÄNDERUNG
-Nur die feinen orangefarbenen Kanten in Rahmen, Tab- und
-Symbolleistentextur tragen kleine Feuerdetails. Linienverlauf, Grundfarben
-und vorhandene graue Glanzwelle bleiben erhalten.
-Der Neuer-Tab-Hintergrund und das Paketsymbol sind die unveränderten
-Originaldateien. Alle ursprünglichen Theme-Farben und Bildpositionen
-sind erhalten. Diese Alternative enthält kein neues Hintergrundmotiv.
+GESTALTUNG
+Unregelmäßige Feuerfilamente, ruhige Abschnitte und unterschiedlich
+kräftige Flammenfelder ziehen durch den Browserrahmen. Die Feuerlinie
+ändert Höhe, Verzweigung und Stärke. Anthrazitfarbene Flächen und ein
+weicher asymmetrischer Glanzverlauf bilden den Hintergrund.
+
+Die Neuer-Tab-Seite verwendet das dazu passende Feuer-und-Rauch-Motiv
+mit ruhiger dunkler Mitte und zwei unterschiedlich angeordneten Randzonen.
+Der Hintergrund ist 3840 × 2160 Pixel groß und zentriert.
+Grundfarben, Chrome-Farbwerte, Bildpositionseinstellungen und Paketsymbol
+stammen weiterhin aus dem ursprünglichen Kupferlicht-Theme.
 
 INSTALLATION
 1. ZIP vollständig in einen dauerhaften Ordner entpacken.
 2. In Chrome chrome://extensions öffnen.
 3. Entwicklermodus einschalten und „Entpackte Erweiterung laden“ wählen.
 4. Den Ordner auswählen, in dem manifest.json liegt.
-5. Das Theme prüfen. Den Ordner während der Verwendung behalten.
+5. Das Ergebnis in einem Chrome-Fenster und einem neuen Tab prüfen.
+Den Theme-Ordner während der Verwendung behalten.
 
 Ein bereits geladenes lokales Theme kann über seinen Eintrag unter
-chrome://extensions neu geladen werden. Zum Wechsel auf diese Alternative
+chrome://extensions neu geladen werden. Zum Wechsel auf Feuerstrom
 den neuen Ordner laden. Zurücksetzen ist in den Chrome-Einstellungen
 unter Darstellung möglich. Das Paket ändert selbst kein Chrome-Profil.
 
 PRÜFUNG
-Bildgrößen, Manifest-Verweise und ZIP-Inhalt sind geprüft. Neuer-Tab-Bild
-und Symbol wurden über SHA-256 als byte-identisch zum Original geprüft.
-Die drei UI-Texturen wurden nach dem PNG-Export pixelweise geprüft:
-Außerhalb enger Masken um die Originalkanten wurden keine Pixel geändert;
-die antialiasierten Original-Linienkerne und die neutralen grauen
-Glanzpixel sind unverändert. Chromes eigene Paketprüfung mit
-Chrome 157.0.8103.40 war in einem isolierten Arbeitsprofil erfolgreich.
-Eine Darstellung im persönlichen Chrome-Profil wurde nicht getestet.
+Manifest, lokale Bildverweise und Bildgrößen wurden geprüft.
+Das Paketsymbol ist über SHA-256 identisch zum Original.
+Die ursprünglichen Theme-Farben und Bildeinstellungen sind unverändert.
+Die Texturvorschau wurde geprüft. Das Theme ließ sich in Chrome 157
+über die offizielle Erweiterungsschnittstelle in einem isolierten
+Arbeitsprofil erfolgreich laden. Chromes eigene Paketprüfung mit
+Chrome 157.0.8103.40 war ebenfalls erfolgreich.
+Eine abschließende visuelle Prüfung der Chrome-Oberfläche war in diesem
+Durchlauf durch die blockierte Computersteuerung nicht möglich. Für
+Version 1.4.0 liegt deshalb keine geprüfte native Browseraufnahme vor.
+Das persönliche Chrome-Profil wurde dabei nicht verändert.
 
+TECHNIK
 Reines Theme ohne JavaScript, HTML, Berechtigungen oder Netzwerkzugriffe.
-Ein normales Chrome-Theme ändert Farben und Texturen. Chrome bestimmt
-Schrift, Bedienelementformen und den Zuschnitt abhängig von Fensterlayout
-und Skalierung. Der vorhandene Glaseindruck ist ein visueller Effekt.
+Chrome bestimmt Schrift, Bedienelementformen und den Zuschnitt abhängig
+von Fensterlayout und Skalierung. Rauch, Glanz und Glaseindruck sind
+visuelle Materialeffekte.
 
 Offizielle Dokumentation:
 https://developer.chrome.com/docs/extensions/develop/ui/themes
