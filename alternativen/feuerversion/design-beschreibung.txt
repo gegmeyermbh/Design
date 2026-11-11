@@ -1,0 +1,36 @@
+FEUERVERSION - ANTHRAZIT / ORANGE / SCHWARZ
+Alternative zur urspruenglichen Designvorlage.
+Stand: 11.11.2026
+
+GRUNDIDEE
+Schmale, durchgehende orange Feuerlinien statt der bisherigen Lichtwellen.
+Kleine Flammenzungen, kupferwarme Reflexe, sichtbarere Transparenz und
+staerkere polierte Glanzkanten auf den anthrazitfarbenen Glasflaechen.
+Ruhiger schwarzer Hintergrund und ausreichend freie Flaechen bleiben erhalten.
+
+FARBEN
+Schwarz #000000: Hintergrund und tiefste Ebene.
+Anthrazit #181A1E: Karten und Glasflaechen.
+Orange #FF7A1A: Aktionen, Auswahl und dekorative Feuerlinie.
+Haupttext #F5F5F7 und Sekundaertext #A7ABB3: helle Texte auf dunklem Grund.
+Schwarze Beschriftung auf flaechigem Orange.
+Amber und Kupfer duerfen als dezente Lichtreflexe auftreten.
+
+TYPOGRAFIE
+Manrope Regular 400, Medium 500, Semibold 600.
+Das generierte App-Mockup zeigt eine visuelle Annaeherung.
+Eine App-Umsetzung bindet echte Schriftdateien ein.
+Das Chrome-Theme verwendet die vorhandene Browser-Schrift.
+
+GLAS UND FEUER
+Optische Transparenz innerhalb deckender PNGs.
+Glanzkanten schaffen Tiefe und trennen die dunklen Ebenen.
+Feuer bleibt als Dekoration hinter Texten und Bedienelementen.
+Keine Rauchwolken, Partikelfelder oder hellen Schleier ueber den Inhalten.
+
+REFERENZEN
+app-design-feuerversion.png: alternatives App-Mockup.
+feuerlinie-glas-referenz.png: gemeinsames Ausgangsmotiv fuer Wallpaper/Chrome.
+wallpaper/: passend zugeschnittene QHD-Hintergruende.
+chrome-theme/: offene Chrome-Theme-Dateien, Version 1.3.0.
+downloads/: installierbare bzw. entpackbare ZIP-Pakete.

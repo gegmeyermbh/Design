@@ -1,0 +1,44 @@
+ANTHRAZIT ORANGE - FEUERVERSION
+Chrome-Theme 1.3.0, eigenständige Alternative zu Kupferlicht
+
+INSTALLIEREN
+1. ZIP vollständig in einen dauerhaften Ordner entpacken.
+2. In Chrome chrome://extensions öffnen und den Entwicklermodus aktivieren.
+3. „Entpackte Erweiterung laden“ wählen.
+4. Den Ordner auswählen, in dem manifest.json liegt.
+5. Einen neuen Tab öffnen und das Ergebnis prüfen.
+
+Den Theme-Ordner während der Verwendung behalten. Dieses Paket ist ein
+lokales Theme, kein Chrome-Web-Store-Download und kein Windows-Setup.
+Wenn ein bereits geladenes lokales Theme aktualisiert wird, den zugehörigen
+Eintrag unter chrome://extensions neu laden oder den neuen Ordner laden.
+Ein anderes Theme wird durch die Auswahl dieser Alternative ersetzt.
+Zurücksetzen ist in den Chrome-Einstellungen unter Darstellung möglich.
+
+GESTALTUNG
+Die Feuerlinie und die glänzenden Glasflächen stammen aus demselben
+Bildmotiv wie die Windows-Wallpaper. Rahmen, Tabs und Symbolleiste tragen
+zurückhaltende Feuerreflexe; die Bedienelemente bleiben kontrastreich.
+Die Neuer-Tab-Seite zeigt die größere Feuerlinie in der unteren Bildhälfte.
+Das Hintergrundbild hat 3840 × 2160 Pixel und ist zentriert; Chrome zeigt je
+nach Fenstergröße und Skalierung einen Ausschnitt. Ein eigenes Neuer-Tab-
+Hintergrundbild kann den Theme-Hintergrund verdecken.
+
+Chrome-Themes ändern Farben und Bildtexturen. Glanz und Transparenz sind
+visuelle Materialeffekte: Der Browserrahmen wird nicht tatsächlich zum
+Desktop durchsichtig. Schriftart und Form der Chrome-Bedienelemente sowie
+Webseiten bleiben durch Chrome bestimmt. Chrome kann die Texturen je nach
+Version, Fensterlayout und Skalierung unterschiedlich zuschneiden.
+
+PRÜFUNG
+Manifest, lokale Bildverweise, PNG-Abmessungen, ZIP-Inhalt und Textkontraste
+wurden geprüft. Chromes eigene Paketprüfung war mit Chrome 157.0.8103.40
+in einem isolierten Arbeitsprofil erfolgreich. Das Theme wurde nicht im
+persönlichen Chrome-Profil installiert oder aktiviert; eine Darstellung
+in Chrome wurde nicht getestet.
+
+Reines Theme ohne JavaScript, HTML, Berechtigungen oder Netzwerkzugriffe.
+
+Offizielle Dokumentation:
+https://developer.chrome.com/docs/extensions/develop/ui/themes
+https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked

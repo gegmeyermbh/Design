@@ -28,6 +28,12 @@ Die abgerundeten Glasflächen behalten ihre feinen Lichtkanten. Sanfte orange Li
 
 Das PNG ist ein generiertes Raster-Mockup mit einer visuellen Annäherung an Manrope. Bei einer App-Umsetzung wird die echte Schriftdatei eingebunden.
 
+## Alternative: Feuerversion
+
+Die [Feuerversion](alternativen/feuerversion/README.md) ergänzt das Design um schmale Feuerlinien, stärkeres Rauchglas und glänzende Reflexe. Sie enthält eine eigene App-Referenz, ein QHD-Wallpaper-Paar und ein passendes Chrome-Theme.
+
+[![App-Design – Feuerversion](alternativen/feuerversion/app-design-feuerversion.png)](alternativen/feuerversion/README.md)
+
 ## Zugriff von anderen Rechnern
 
 Das Repository ist unter https://github.com/gegmeyermbh/Design von jedem Rechner im Browser erreichbar. Es kann außerdem mit Git geklont werden:

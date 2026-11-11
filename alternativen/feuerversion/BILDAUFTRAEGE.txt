@@ -1,0 +1,36 @@
+BILDAUFTRAEGE - FEUERVERSION
+Werkzeug: integriertes Imagegen.
+
+1. Wallpaper / Materialreferenz
+Eingabe: urspruengliches Lichtwellen-Wallpaper als Bearbeitungsziel.
+
+Use case: precise-object-edit / lighting-weather
+Asset type: premium Windows dual-monitor wallpaper master.
+Input image 1: EDIT TARGET. Preserve the exact canvas aspect ratio 25:16, composition, existing sweeping wave geometry, all curve positions and all dark negative-space areas.
+Primary request: Make the existing orange wave resemble a refined, living line of fire, and visibly strengthen the transparency and glossy reflections of the dark anthracite glass surfaces.
+Change 1 - fire line: transform the main thin orange luminous wave into a slender continuous ribbon of realistic orange fire. Keep its luminous central core on EXACTLY the same curve and at the same vertical position as the original. Add delicate, small, curling flame tongues licking gently upward along the curve, irregular but elegant, with fine amber-gold hot edges and deeper copper-orange body. The flame should be visibly recognizable as fire, but remain a thin graceful line, not a wall of flames. At this reference image size, flames should usually rise about 10–30 pixels above the line, with a few shorter curling wisps and slightly stronger flame detail toward the far right. Keep the start and end positions of the curve unchanged. Very sparse tiny embers immediately near the line only; keep the rest of the canvas clean.
+Change 2 - enhanced glass: the existing dark curved surfaces become unmistakably translucent smoked anthracite glass. Show a stronger yet tasteful sense of depth through overlapping transparent layers, clear polished glossy edges, smooth broad specular highlights, subtle luminous edge reflections, and warm fire reflections visible through and across the glass. Gloss highlights should stay dark silver / charcoal with copper accents, not white hot. Glass remains deep anthracite #181A1E against true black #000000. The actual wallpaper background is OPAQUE; transparency is a visual glass material effect.
+Style: beautiful high-end minimal abstract 3D artwork, photorealistic fire and polished glass, sophisticated depth, smooth gradients, precise detail.
+Palette: black, anthracite, warm orange #FF7A1A, copper, very restrained amber-gold highlights.
+Invariants: Keep the overall scene dark and usable as a desktop background. Preserve the wide quiet black upper area for desktop icons and the clock widget. Preserve the quiet lower half. Preserve every existing glass fold and wave path; only enhance their material quality and the fiery character of the main line. Do NOT shift, rotate, resize or reframe the composition. Full bleed 25:16 landscape master.
+Avoid: large flames, fire clouds, heavy smoke, bright haze across the desktop, scattered stars or particle fields, blue, purple, UI, text, logos, icons, clocks, devices, desks, monitor frames, watermarks, labels, crop guides or any borders.
+
+2. App-Design als Alternative
+Eingabe1: app-design-manrope.png als Bearbeitungsziel.
+Eingabe2: feuerlinie-glas-referenz.png als Stilreferenz.
+
+Use case: style-transfer / precise-object-edit
+Asset type: alternative app design reference sheet named Feuerversion.
+Input image 1: EDIT TARGET, the original 3:2 landscape app-design-manrope.png with three complete smartphone screens and German planning-app interface.
+Input image 2: STYLE REFERENCE ONLY, the newly approved black/anthracite wallpaper with a thin orange fireline and glossy transparent smoked glass. Transfer this material and lighting language; do not insert the wallpaper as a separate panel or replace the UI.
+Primary request: Create a matching alternative FEUERVERSION of the original app design. Preserve all three complete devices, their exact composition, screen layouts, navigation, controls, icons, German text, numbers, spacing and Manrope-like typography. Keep all text and actions legible.
+Change only the decorative background waves and the material/light finish of the existing surfaces:
+- Existing delicate orange background curves become fine flowing lines of fire with small graceful orange flame tongues, warm amber edges and subtle copper glow. Flames are decorative, mostly behind the UI cards, not over text or controls. Restrained elegant fire, not an inferno.
+- Existing anthracite cards, buttons and navigation surfaces have noticeably stronger smoked-glass transparency, polished glossy rims, layered optical depth and warm reflections of the fireline. They remain recognizably anthracite #181A1E over true black #000000.
+- Primary action surfaces remain orange #FF7A1A with black labels; light text stays light on dark cards. Keep the focus timer ring geometry and orange/anthracite progress values unchanged, with only a refined warm glossy material enhancement.
+Header: keep top title exactly "APP DESIGN". Replace only the subtitle with exactly "Anthrazit × Orange × Schwarz · Feuerversion", in a clean centered readable style. No other text changes.
+Invariants: three full devices, original 3:2 landscape sheet, same German content and controls, original typography and spacing, all visible text correct, all three phones fully contained in the frame. This is an alternative variant, not a new layout.
+Avoid: new controls, new labels, duplicated icons, extra screens, clipping, smoke, sparks across text, bright haze, blue/violet colors, heavy flames, fake text, watermark, new logos or any added objects.
+
+3. Technischer Export
+Wallpaper: gemeinsames Motiv auf4000x2560 skaliert, links crop(0,0,1440,2560) plus35px nach unten, rechts crop(1440,349,2560,1440). Chrome-Assets: aus derselben Materialreferenz abgeleitet; Details stehen in chrome-theme.

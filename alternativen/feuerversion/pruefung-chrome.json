@@ -1,0 +1,68 @@
+{
+  "Theme": "Anthrazit Orange - Feuerversion",
+  "Version": "1.3.0",
+  "ManifestV3": true,
+  "LocalImages": [
+    {
+      "Path": "images/frame.png",
+      "Width": 3840,
+      "Height": 256,
+      "PixelFormat": "Format24bppRgb"
+    },
+    {
+      "Path": "images/tabs.png",
+      "Width": 3840,
+      "Height": 41,
+      "PixelFormat": "Format24bppRgb"
+    },
+    {
+      "Path": "images/toolbar.png",
+      "Width": 3840,
+      "Height": 160,
+      "PixelFormat": "Format24bppRgb"
+    },
+    {
+      "Path": "images/new-tab.png",
+      "Width": 3840,
+      "Height": 2160,
+      "PixelFormat": "Format24bppRgb"
+    },
+    {
+      "Path": "images/icon128.png",
+      "Width": 128,
+      "Height": 128,
+      "PixelFormat": "Format24bppRgb"
+    }
+  ],
+  "ConservativeTextureContrast": [
+    {
+      "Pair": "Aktiver Tab / hellstes Rahmenpixel",
+      "MinimumRatio": 4.82
+    },
+    {
+      "Pair": "Inaktiver Tab / hellstes Tabpixel",
+      "MinimumRatio": 5.11
+    },
+    {
+      "Pair": "Lesezeichen / hellstes Symbolleistenpixel",
+      "MinimumRatio": 7.97
+    },
+    {
+      "Pair": "Symbol / hellstes Symbolleistenpixel",
+      "MinimumRatio": 4.76
+    }
+  ],
+  "NoScriptsOrPermissions": true,
+  "ChromeInstalledOrActivated": false,
+  "ActualChromeRenderingTested": false,
+  "ThemeDocumentation": "https://developer.chrome.com/docs/extensions/develop/ui/themes",
+  "ChromiumThemeKeys": "https://chromium.googlesource.com/chromium/src/+/main/chrome/browser/themes/browser_theme_pack.cc",
+  "ChromePackageValidation": {
+    "Passed": true,
+    "ChromeVersion": "157.0.8103.40",
+    "Method": "--pack-extension",
+    "IsolatedWorkProfile": true,
+    "ExitCode": 0,
+    "CrxAndKeyExcludedFromDeliverable": true
+  }
+}
