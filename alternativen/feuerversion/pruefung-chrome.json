@@ -1,62 +1,113 @@
 {
-  "Theme": "Anthrazit Orange - Feuerversion",
-  "Version": "1.3.0",
-  "ManifestV3": true,
-  "LocalImages": [
+  "Name": "Anthrazit Orange - Kupferlicht Feuerlinien",
+  "Version": "1.3.1",
+  "BaseVersion": "1.2.0",
+  "Scope": "Only thin original orange UI edges; new-tab background and icon byte-identical",
+  "Method": "Keep original antialiased line cores intact; sample approved AI fire texture as soft tiny emission above exact original sine and existing y24 hairline",
+  "OriginalThemeObjectUnchanged": true,
+  "OriginalIconPathUnchanged": true,
+  "UITexturePixelChecks": [
     {
-      "Path": "images/frame.png",
+      "File": "frame.png",
       "Width": 3840,
       "Height": 256,
-      "PixelFormat": "Format24bppRgb"
+      "SineMaskRadius": 7,
+      "HairlineY": null,
+      "HairlineMaskRadius": null,
+      "Pixels": {
+        "ChangedPixels": 3839,
+        "ChangedPercent": 0.3905232747395833,
+        "OutsideMaskChanged": 0,
+        "NeutralGlossChanged": 0,
+        "OriginalLineCoreChanged": 0,
+        "MaximumDistanceFromOriginalLine": 7,
+        "ChangedBounds": {
+          "MinX": 176,
+          "MinY": 15,
+          "MaxX": 3839,
+          "MaxY": 95
+        }
+      }
     },
     {
-      "Path": "images/tabs.png",
+      "File": "tabs.png",
       "Width": 3840,
       "Height": 41,
-      "PixelFormat": "Format24bppRgb"
+      "SineMaskRadius": 7,
+      "HairlineY": 24,
+      "HairlineMaskRadius": 5,
+      "Pixels": {
+        "ChangedPixels": 4652,
+        "ChangedPercent": 2.9547764227642275,
+        "OutsideMaskChanged": 0,
+        "NeutralGlossChanged": 0,
+        "OriginalLineCoreChanged": 0,
+        "MaximumDistanceFromOriginalLine": 7,
+        "ChangedBounds": {
+          "MinX": 122,
+          "MinY": 15,
+          "MaxX": 3839,
+          "MaxY": 38
+        }
+      }
     },
     {
-      "Path": "images/toolbar.png",
+      "File": "toolbar.png",
       "Width": 3840,
       "Height": 160,
-      "PixelFormat": "Format24bppRgb"
-    },
-    {
-      "Path": "images/new-tab.png",
-      "Width": 3840,
-      "Height": 2160,
-      "PixelFormat": "Format24bppRgb"
-    },
-    {
-      "Path": "images/icon128.png",
-      "Width": 128,
-      "Height": 128,
-      "PixelFormat": "Format24bppRgb"
+      "SineMaskRadius": 7,
+      "HairlineY": 24,
+      "HairlineMaskRadius": 5,
+      "Pixels": {
+        "ChangedPixels": 6256,
+        "ChangedPercent": 1.0182291666666667,
+        "OutsideMaskChanged": 0,
+        "NeutralGlossChanged": 0,
+        "OriginalLineCoreChanged": 0,
+        "MaximumDistanceFromOriginalLine": 7,
+        "ChangedBounds": {
+          "MinX": 122,
+          "MinY": 15,
+          "MaxX": 3839,
+          "MaxY": 95
+        }
+      }
     }
   ],
-  "ConservativeTextureContrast": [
+  "ImageHashes": [
     {
-      "Pair": "Aktiver Tab / hellstes Rahmenpixel",
-      "MinimumRatio": 4.82
+      "File": "frame.png",
+      "OriginalSha256": "09656f314d3568d6a0e25620a67807a2be657ff19e5715f05ae38204520d4d6a",
+      "NewSha256": "2d477c660cb0b0064683c34f363567691bc23c5479ad7fc253aa7cbd3f6c083b",
+      "ByteIdentical": false
     },
     {
-      "Pair": "Inaktiver Tab / hellstes Tabpixel",
-      "MinimumRatio": 5.11
+      "File": "icon128.png",
+      "OriginalSha256": "fde9a4c2fcf80d0eec98f641e577b89e0e78e43d4db02f8adfd51f2c3d7421f7",
+      "NewSha256": "fde9a4c2fcf80d0eec98f641e577b89e0e78e43d4db02f8adfd51f2c3d7421f7",
+      "ByteIdentical": true
     },
     {
-      "Pair": "Lesezeichen / hellstes Symbolleistenpixel",
-      "MinimumRatio": 7.97
+      "File": "new-tab.png",
+      "OriginalSha256": "a4e4c06ff734918c99abbbca99e8f0afe08399f7c090b0a9fd8580ecf2c4d540",
+      "NewSha256": "a4e4c06ff734918c99abbbca99e8f0afe08399f7c090b0a9fd8580ecf2c4d540",
+      "ByteIdentical": true
     },
     {
-      "Pair": "Symbol / hellstes Symbolleistenpixel",
-      "MinimumRatio": 4.76
+      "File": "tabs.png",
+      "OriginalSha256": "3b6380693d34643dba9255ce647e45f51024845f33174d716a36f332a2bac14d",
+      "NewSha256": "f8044bc4c683657e186bd31f2b7c9b1b7d05000c72172fc282777f88d4639b60",
+      "ByteIdentical": false
+    },
+    {
+      "File": "toolbar.png",
+      "OriginalSha256": "eeada0565f97f1335ced1cd7f342183db331106cd9670d2cbeabd60840516266",
+      "NewSha256": "edcdd9760300b70ac05eaef1fe2d60e3f8c5e6d26029d2a28f8d862a3c23288f",
+      "ByteIdentical": false
     }
   ],
-  "NoScriptsOrPermissions": true,
-  "ChromeInstalledOrActivated": false,
+  "ChromeProfileChanged": false,
   "ActualChromeRenderingTested": false,
-  "ThemeDocumentation": "https://developer.chrome.com/docs/extensions/develop/ui/themes",
-  "ChromiumThemeKeys": "https://chromium.googlesource.com/chromium/src/+/main/chrome/browser/themes/browser_theme_pack.cc",
   "ChromePackageValidation": {
     "Passed": true,
     "ChromeVersion": "157.0.8103.40",
@@ -64,5 +115,55 @@
     "IsolatedWorkProfile": true,
     "ExitCode": 0,
     "CrxAndKeyExcludedFromDeliverable": true
+  },
+  "ZipValidation": {
+    "Entries": [
+      {
+        "Path": "images/frame.png",
+        "Bytes": 129736,
+        "Sha256": "2d477c660cb0b0064683c34f363567691bc23c5479ad7fc253aa7cbd3f6c083b",
+        "MatchesSource": true
+      },
+      {
+        "Path": "images/icon128.png",
+        "Bytes": 3715,
+        "Sha256": "fde9a4c2fcf80d0eec98f641e577b89e0e78e43d4db02f8adfd51f2c3d7421f7",
+        "MatchesSource": true
+      },
+      {
+        "Path": "images/new-tab.png",
+        "Bytes": 1363955,
+        "Sha256": "a4e4c06ff734918c99abbbca99e8f0afe08399f7c090b0a9fd8580ecf2c4d540",
+        "MatchesSource": true
+      },
+      {
+        "Path": "images/tabs.png",
+        "Bytes": 47555,
+        "Sha256": "f8044bc4c683657e186bd31f2b7c9b1b7d05000c72172fc282777f88d4639b60",
+        "MatchesSource": true
+      },
+      {
+        "Path": "images/toolbar.png",
+        "Bytes": 130809,
+        "Sha256": "edcdd9760300b70ac05eaef1fe2d60e3f8c5e6d26029d2a28f8d862a3c23288f",
+        "MatchesSource": true
+      },
+      {
+        "Path": "INSTALLATION.txt",
+        "Bytes": 2152,
+        "Sha256": "1b65dc9cd309d89781d52bf8cb3f62cac44dae81f15bad8b4c3589e9ceeb63b7",
+        "MatchesSource": true
+      },
+      {
+        "Path": "manifest.json",
+        "Bytes": 1640,
+        "Sha256": "1f0c7a5af119df85810a3e0edb8905f2e68727fdf59be25a86145232f29eae78",
+        "MatchesSource": true
+      }
+    ],
+    "EntryCount": 7,
+    "AllEntryBytesMatchSource": true,
+    "ManifestAtRoot": true,
+    "ZipSha256": "9f16d6226db5c87892546ab4fac549bf4feb1acb79e9d22659a0c2eebd2e1059"
   }
 }

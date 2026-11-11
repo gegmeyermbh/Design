@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Anthrazit Orange - Feuerversion",
-  "version": "1.3.0",
-  "description": "Feuerlinie auf schwarzem Grund, glänzende anthrazitfarbene Glasflächen und warme orange Reflexe.",
+  "name": "Anthrazit Orange - Kupferlicht Feuerlinien",
+  "version": "1.3.1",
+  "description": "Originales Kupferlicht-Theme mit feinen Feuerlinien an den orangefarbenen Kanten.",
   "icons": {
     "128": "images/icon128.png"
   },
@@ -25,9 +25,9 @@
         15
       ],
       "toolbar": [
-        24,
-        26,
-        30
+        32,
+        34,
+        38
       ],
       "background_tab": [
         20,
@@ -36,28 +36,23 @@
       ],
       "tab_text": [
         255,
-        192,
-        128
+        180,
+        112
       ],
       "tab_background_text": [
-        196,
-        199,
-        206
+        184,
+        187,
+        194
       ],
       "bookmark_text": [
-        245,
-        235,
-        223
+        241,
+        232,
+        224
       ],
       "toolbar_button_icon": [
         255,
-        163,
-        91
-      ],
-      "toolbar_text": [
-        245,
-        235,
-        223
+        156,
+        87
       ],
       "omnibox_background": [
         0,
@@ -70,9 +65,9 @@
         247
       ],
       "ntp_background": [
-        0,
-        0,
-        0
+        18,
+        20,
+        24
       ],
       "ntp_text": [
         245,
@@ -81,8 +76,8 @@
       ],
       "ntp_link": [
         255,
-        169,
-        96
+        157,
+        79
       ]
     },
     "properties": {

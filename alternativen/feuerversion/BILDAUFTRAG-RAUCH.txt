@@ -1,0 +1,19 @@
+BILDAUFTRAG - FEUERLINIE MIT RAUCH
+Werkzeug: integriertes Imagegen.
+Eingabe: work\Wallpaper\feuerlinie-original.png.
+
+Use case: precise-object-edit / lighting-weather.
+Asset type: premium Windows dual-monitor abstract wallpaper master.
+Input image 1: EDIT TARGET, the current black / anthracite smoked-glass wallpaper with the slender orange fireline. Preserve this exact 1568x1003 canvas, framing, wave paths and glass shape positions.
+
+Primary request: The orange fire must visibly produce smoke. Add substantially more realistic, clearly visible smoke rising directly FROM the existing main line of fire, while preserving the elegant glossy glass style.
+
+Smoke: semi-transparent charcoal and ash-grey smoke with warm copper-orange illumination from the flames underneath. Several beautiful organic smoke plumes emerge continuously from different points along the fireline, lift upward, curl, spiral, and break into delicate layered wisps. The smoke must look physically connected to the burning line, not like unrelated background fog. Make the smoke obviously visible at normal wallpaper viewing size; it should not be so dark or faint that it disappears. Medium-strength, textured and volumetric, with a mixture of denser near-source wisps and more transparent dissipating curls higher up. Let the larger curls reach roughly 80–180 source-image pixels above the fireline at a few points, with irregular natural smaller tendrils elsewhere. Soft pale ash edges and warm copper inner light, no glowing white clouds.
+
+Invariants: Keep the luminous central core of the entire main orange firewave at EXACTLY the same pixel coordinates and with the same curve geometry as the source. Keep the existing small flame tongues crisp and clearly visible; smoke rises above the line, not an opaque mask over it. Preserve every glass fold, existing polished rim, reflected highlight, lower-left diagonal ribbon, colors and overall composition. Do not move, stretch, rotate, resize or reframe any original content. Do not draw a second new fireline or change the existing wave amplitude. Maintain the restrained black #000000 ground, anthracite #181A1E glass, orange #FF7A1A flames and copper reflections.
+Desktop usability: retain broad quiet black negative space in the uppermost region and lower half. Smoke may rise visibly into the area directly above the fireline but must dissipate before turning the whole desktop into haze. No large solid cloud wall and no bright opaque veil. Actual file background remains opaque; the smoke and glass have visual material transparency.
+Output: one full-bleed landscape image, same dimensions and aspect ratio as the source.
+Avoid: new objects, room, screens, frames, labels, text, logos, icons, symbols, clock, UI, wallpaper mockup, border, crop guides, blue or purple color, stars, particle field, sparks scattered across the desktop, explosive fireball, large flames, altered wave geometry.
+
+TECHNISCHER EXPORT
+Gemeinsames Motiv auf 4000x2560 skaliert; rechts Ausschnitt (1440,349,2560,1440); links Ausschnitt (0,0,1440,2560), dann35px nach unten. Keine weiteren kreativen Bildaenderungen.

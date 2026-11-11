@@ -1,43 +1,40 @@
-ANTHRAZIT ORANGE - FEUERVERSION
-Chrome-Theme 1.3.0, eigenständige Alternative zu Kupferlicht
+ANTHRAZIT ORANGE - KUPFERLICHT FEUERLINIEN
+Chrome-Theme 1.3.1 auf Grundlage von Kupferlicht 1.2.0
 
-INSTALLIEREN
+ÄNDERUNG
+Nur die feinen orangefarbenen Kanten in Rahmen, Tab- und
+Symbolleistentextur tragen kleine Feuerdetails. Linienverlauf, Grundfarben
+und vorhandene graue Glanzwelle bleiben erhalten.
+Der Neuer-Tab-Hintergrund und das Paketsymbol sind die unveränderten
+Originaldateien. Alle ursprünglichen Theme-Farben und Bildpositionen
+sind erhalten. Diese Alternative enthält kein neues Hintergrundmotiv.
+
+INSTALLATION
 1. ZIP vollständig in einen dauerhaften Ordner entpacken.
-2. In Chrome chrome://extensions öffnen und den Entwicklermodus aktivieren.
-3. „Entpackte Erweiterung laden“ wählen.
+2. In Chrome chrome://extensions öffnen.
+3. Entwicklermodus einschalten und „Entpackte Erweiterung laden“ wählen.
 4. Den Ordner auswählen, in dem manifest.json liegt.
-5. Einen neuen Tab öffnen und das Ergebnis prüfen.
+5. Das Theme prüfen. Den Ordner während der Verwendung behalten.
 
-Den Theme-Ordner während der Verwendung behalten. Dieses Paket ist ein
-lokales Theme, kein Chrome-Web-Store-Download und kein Windows-Setup.
-Wenn ein bereits geladenes lokales Theme aktualisiert wird, den zugehörigen
-Eintrag unter chrome://extensions neu laden oder den neuen Ordner laden.
-Ein anderes Theme wird durch die Auswahl dieser Alternative ersetzt.
-Zurücksetzen ist in den Chrome-Einstellungen unter Darstellung möglich.
-
-GESTALTUNG
-Die Feuerlinie und die glänzenden Glasflächen stammen aus demselben
-Bildmotiv wie die Windows-Wallpaper. Rahmen, Tabs und Symbolleiste tragen
-zurückhaltende Feuerreflexe; die Bedienelemente bleiben kontrastreich.
-Die Neuer-Tab-Seite zeigt die größere Feuerlinie in der unteren Bildhälfte.
-Das Hintergrundbild hat 3840 × 2160 Pixel und ist zentriert; Chrome zeigt je
-nach Fenstergröße und Skalierung einen Ausschnitt. Ein eigenes Neuer-Tab-
-Hintergrundbild kann den Theme-Hintergrund verdecken.
-
-Chrome-Themes ändern Farben und Bildtexturen. Glanz und Transparenz sind
-visuelle Materialeffekte: Der Browserrahmen wird nicht tatsächlich zum
-Desktop durchsichtig. Schriftart und Form der Chrome-Bedienelemente sowie
-Webseiten bleiben durch Chrome bestimmt. Chrome kann die Texturen je nach
-Version, Fensterlayout und Skalierung unterschiedlich zuschneiden.
+Ein bereits geladenes lokales Theme kann über seinen Eintrag unter
+chrome://extensions neu geladen werden. Zum Wechsel auf diese Alternative
+den neuen Ordner laden. Zurücksetzen ist in den Chrome-Einstellungen
+unter Darstellung möglich. Das Paket ändert selbst kein Chrome-Profil.
 
 PRÜFUNG
-Manifest, lokale Bildverweise, PNG-Abmessungen, ZIP-Inhalt und Textkontraste
-wurden geprüft. Chromes eigene Paketprüfung war mit Chrome 157.0.8103.40
-in einem isolierten Arbeitsprofil erfolgreich. Das Theme wurde nicht im
-persönlichen Chrome-Profil installiert oder aktiviert; eine Darstellung
-in Chrome wurde nicht getestet.
+Bildgrößen, Manifest-Verweise und ZIP-Inhalt sind geprüft. Neuer-Tab-Bild
+und Symbol wurden über SHA-256 als byte-identisch zum Original geprüft.
+Die drei UI-Texturen wurden nach dem PNG-Export pixelweise geprüft:
+Außerhalb enger Masken um die Originalkanten wurden keine Pixel geändert;
+die antialiasierten Original-Linienkerne und die neutralen grauen
+Glanzpixel sind unverändert. Chromes eigene Paketprüfung mit
+Chrome 157.0.8103.40 war in einem isolierten Arbeitsprofil erfolgreich.
+Eine Darstellung im persönlichen Chrome-Profil wurde nicht getestet.
 
 Reines Theme ohne JavaScript, HTML, Berechtigungen oder Netzwerkzugriffe.
+Ein normales Chrome-Theme ändert Farben und Texturen. Chrome bestimmt
+Schrift, Bedienelementformen und den Zuschnitt abhängig von Fensterlayout
+und Skalierung. Der vorhandene Glaseindruck ist ein visueller Effekt.
 
 Offizielle Dokumentation:
 https://developer.chrome.com/docs/extensions/develop/ui/themes

@@ -7,9 +7,9 @@ Die Feuerversion ergänzt die ursprüngliche Gestaltung als eigenständige Alter
 ## Dateien und Downloads
 
 - [App-Design als PNG](app-design-feuerversion.png): drei vollständige Screens mit der bisherigen Anordnung und Manrope-artiger Typografie.
-- [Feuerlinie und Glas als Materialreferenz](feuerlinie-glas-referenz.png): das gemeinsame Motiv für Wallpaper und Chrome-Theme.
-- [Chrome-Theme 1.3.0 herunterladen](downloads/Anthrazit-Orange-Chrome-Feuerversion-1.3.0.zip), mit [offenen Theme-Dateien und Installationshinweisen](chrome-theme/).
-- [Wallpaper-Paar für QHD herunterladen](downloads/Wallpaper-Feuerlinie-QHD.zip), auch als [einzelne PNGs](wallpaper/).
+- [Feuerlinie und Glas als Materialreferenz](feuerlinie-glas-referenz.png) sowie [Wallpaper mit aufsteigendem Rauch](feuerlinie-rauch-referenz.png).
+- [Chrome-Theme Kupferlicht mit Feuerlinien 1.3.1 herunterladen](downloads/Anthrazit-Orange-Chrome-Feuerlinien-1.3.1.zip), mit [offenen Theme-Dateien und Installationshinweisen](chrome-theme/). Es übernimmt das ursprüngliche Kupferlicht-Theme und ergänzt ausschließlich die feinen orangefarbenen Kanten; der Neuer-Tab-Hintergrund bleibt original.
+- [Wallpaper-Paar mit Rauch für QHD herunterladen](downloads/Wallpaper-Feuerlinie-QHD.zip), auch als [einzelne PNGs](wallpaper/).
 - [Farben und Gestaltung](design-beschreibung.txt) sowie [Bildaufträge](BILDAUFTRAEGE.txt).
 
 ## Gestaltung
@@ -27,6 +27,8 @@ Flammen und Glanz bleiben hinter den Inhalten. Lesbarkeit, klare Bediengrenzen u
 
 Das App-Mockup wurde mit dem integrierten Imagegen-Werkzeug aus der ursprünglichen Referenz und dem neuen Wallpaper-Stil erstellt. Es ist eine visuelle Referenz, keine App-Implementierung. Für eine Umsetzung werden die echten Manrope-Schriftdateien eingebunden. Ein Chrome-Theme verändert Chrome-Farben und Hintergrundbilder; es setzt keine frei wählbare Schriftart für die Browseroberfläche.
 
+Beim Wallpaper steigt sichtbarer Rauch direkt aus den Flammen auf. Das Chrome-Theme bewahrt die bisherigen Kupferlicht-Flächen, Farben und den ursprünglichen Neuer-Tab-Hintergrund; nur seine feinen orangefarbenen Kanten erhalten Feuerdetails.
+
 ## Wallpaper-Aufstellung
 
 Die Einzelbilder sind für zwei QHD-Displays vorbereitet:
@@ -40,4 +42,4 @@ Die beiden PNGs werden jeweils dem passenden Monitor zugewiesen. Diese Ausschnit
 
 ## Prüfung
 
-Die Bilddateien wurden dekodiert und visuell geprüft. Die Wallpaper haben die angegebenen Pixelmaße. Das Chrome-Theme hat Chromes eigene Paketprüfung mit Chrome 157.0.8103.40 bestanden; Manifest, Bildverweise, ZIP-Inhalt und Textkontraste wurden geprüft. Die Darstellung innerhalb Chrome wurde nicht visuell getestet. Details und Installationsschritte stehen in der Theme-Dokumentation. Das App-Mockup und die Materialreferenz ersetzen keine Prüfung einer späteren App-Umsetzung.
+Die Bilddateien wurden dekodiert und visuell geprüft. Die Wallpaper haben die angegebenen Pixelmaße. Das Chrome-Theme hat Chromes eigene Paketprüfung mit Chrome 157.0.8103.40 bestanden; Manifest, Bildverweise, ZIP-Inhalt und Originaltreue wurden geprüft. Der Neuer-Tab-Hintergrund und das Symbol stimmen über ihre SHA-256-Prüfsummen mit den Originaldateien überein. Die Darstellung innerhalb Chrome wurde nicht visuell getestet. Details und Installationsschritte stehen in der Theme-Dokumentation. Das App-Mockup und die Materialreferenz ersetzen keine Prüfung einer späteren App-Umsetzung.

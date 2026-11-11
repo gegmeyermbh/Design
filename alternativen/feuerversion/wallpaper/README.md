@@ -1,7 +1,9 @@
-# QHD-Wallpaper – Feuerversion
+# QHD-Wallpaper – Feuerlinie mit Rauch
 
 - [Links, Hochformat, 1440 × 2560](Feuerlinie-Links-1440x2560.png)
 - [Rechts, Querformat, 2560 × 1440](Feuerlinie-Rechts-2560x1440.png)
+
+Sichtbare, durchscheinende anthrazit- und aschgraue Rauchwirbel steigen direkt aus der Feuerlinie auf. Kupferwarme Beleuchtung und polierte Rauchglasflächen bleiben erhalten. Die [Rauchreferenz](../feuerlinie-rauch-referenz.png) und der [Bildauftrag](../BILDAUFTRAG-RAUCH.txt) dokumentieren das Motiv.
 
 Die Oberkante des linken Monitors liegt 95 mm über der rechten. Die beiden Displays melden eine Bildfläche von 697 × 392 mm. Daraus ergibt sich annähernd derselbe Pixelabstand und ein Grundversatz von 349 Pixeln.
 
